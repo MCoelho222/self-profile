@@ -1,9 +1,12 @@
 import Image from "next/image";
+import EduSection from "./ui/edu-section";
+import AboutMe from "./ui/about-me";
 
 export default function Home() {
+  const { cvData } = require('./lib/cv-data.js');
   return (
     <main className="flex flex-row min-h-screen bg-slate-900 p-6 mx-5 justify-center">
-      <div className="flex flex-row w-1/3 justify-center">
+      <div className="flex flex-row w-1/4 justify-center">
         <Image
           className="h-48 w-48 rounded-full"
           width={300}
@@ -12,19 +15,12 @@ export default function Home() {
           alt="Marcelo"
         />
       </div>
-      <div className="w-1/3">
-        <p className="text-4xl text-white font-bold mb-36">Welcome to my Profile!</p>
-        <p className="text-slate-400 text-justify">
-          I am a fullstack web developer and environmental engineer with doctorate degree.
-          Currently, I am working with Python, Pandas, Numpy for training AI-based models.
-          However, I've also been working with fullstack web development since 2022 using Python, Flask,
-          Typescript and React mainly. My longer experience is with Python, which I use since 2016 mainly for
-          data analysis. In addition to improving as a fullstack developer and data scientist, I am interested in
-          artificial intelligence. So I'm pursuing a postgraduate degree in this field.
-          I am self managing, collaborative, communicative, open to learn, detail-oriented and determined.
-        </p>
+      <div className="w-2/4">
+        {/* <p className="text-4xl text-slate-300 font-bold mb-36">Welcome to my Profile!</p> */}
+        <AboutMe title='About me' content={cvData.aboutMe}/>
+        <EduSection title="Education" content={cvData.education}/>
       </div>
-      <div className="w-1/3">
+      <div className="w-1/4">
       </div>
     </main>
   );
