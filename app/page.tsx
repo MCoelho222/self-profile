@@ -1,6 +1,7 @@
-import Image from "next/image";
-import EduSection from "./ui/edu-section";
-import AboutMe from "./ui/about-me";
+import Image from 'next/image';
+import Education from './ui/education';
+import Experience from './ui/experience';
+import AboutMe from './ui/aboutme';
 
 export default function Home() {
   const { cvData } = require('./lib/cv-data.js');
@@ -17,8 +18,9 @@ export default function Home() {
       </div>
       <div className="w-2/4">
         {/* <p className="text-4xl text-slate-300 font-bold mb-36">Welcome to my Profile!</p> */}
-        <AboutMe title='About me' content={cvData.aboutMe}/>
-        <EduSection title="Education" content={cvData.education}/>
+        <AboutMe title='About me' content={cvData.aboutMe} />
+        <Education title="Education" content={cvData.education} />
+        <Experience title="DevExperience" content={cvData.dev_experience} />
       </div>
       <div className="w-1/4">
       </div>

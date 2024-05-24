@@ -16,6 +16,8 @@ const cvData = {
         {
             period: "2023 - now",
             institution: "Pontifical Catholic University of Minas Gerais (PUC Minas)",
+            linkname: "PUC Minas",
+            link: "https://www.pucminas.br/",
             title: "Artificial Intelligence Specialist",
             level: "Postgraduate",
             description: "The course has 16 modules: Programming for data science, Data visualization, \
@@ -30,6 +32,8 @@ const cvData = {
         {
             period: "2022 - 2023",
             institution: "Federal University of Paraná (UFPR)",
+            linkname: "UFPR",
+            link: "https://ufpr.br/",
             title: "Researcher",
             level: "Post doctoral",
             description:"Monitoring and analysis of water quality data under solar electric power plants installed \
@@ -39,6 +43,8 @@ const cvData = {
         {
             period: "2015 - 2019",
             institution: "Federal University of Paraná (UFPR)",
+            linkname: "UFPR",
+            link: "https://ufpr.br/",
             title: "PhD.",
             level: "Doctorate degree",
             description:"Uncertainty analysis in the statistical and stochastic context of water quality time series.",
@@ -47,6 +53,8 @@ const cvData = {
         {
             period: "2011 - 2013",
             institution: "Federal University of Paraná (UFPR)",
+            linkname: "UFPR",
+            link: "https://ufpr.br/",
             title: "Master",
             level: "Master's degree",
             description:"Water quality monitoring strategy for the management of water resources in urban basins",
@@ -55,6 +63,8 @@ const cvData = {
         {
             period: "2004 - 2010",
             institution: "Federal University of Paraná (UFPR)",
+            linkname: "UFPR",
+            link: "https://ufpr.br/",
             title: "Environmental engineer",
             level: "Graduate",
             description:"",
