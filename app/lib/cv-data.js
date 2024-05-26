@@ -1,4 +1,13 @@
 const cvData = {
+    info: {
+        email: 'mcoelho2011@hotmail.com',
+        linkedin: 'https://www.linkedin.com/in/mcoelho222',
+        github: 'https://github.com/MCoelho222',
+        name: 'Marcelo Coelho',
+        job: 'Software Engineer for AI Training Data',
+        company: 'Scale AI',
+        titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
+    },
     aboutMe: 
     "I am a fullstack web developer and environmental engineer with doctorate degree. \
     Currently, I work with python for training AI-based models for generating code for data analysis. \
@@ -10,8 +19,8 @@ const cvData = {
         "Python", "Flask", "JavaScript", "TypeScript", "HTML", "CSS",
         "Vue.js", "Postgres", "Postgis", "Docker", "Statistics", "Next.js"
     ],
-    softSkills:["self managing", "collaborative", "communicative", "detail-oriented", "calm", "organized", "determined"],
-    language: ["portuguese (native)", "english (fluent)"],
+    softSkills:["Self managing", "Collaborative", "Communicative", "Detail-oriented", "Calm", "Organized", "Determined"],
+    language: ["Portuguese (native)", "English (fluent)"],
     education:[
         {
             period: "2023 - now",

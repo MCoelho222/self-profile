@@ -52,6 +52,9 @@ body {
   @apply text-lg text-slate-500 text-justify;
 }
 
+.dark-text-sm {
+  @apply text-sm text-slate-500 text-justify;
+}
 /* Main text */
 .main-text {
   @apply text-lg text-slate-400 text-justify;
