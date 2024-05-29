@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex flex-col justify-center min-h-screen bg-slate-900 p-4 mx-5 sm:flex-row">
       <div className=" w-full h-full flex flex-col items-center pt-5 sm:w-1/5 sm:fixed sm:top-0 sm:left-0 sm:pt-10 sm:pl-1 sm:bg-slate-900">
         <Image
-          className="h-28 w-28 rounded-full mb-5 border-2 border-solid border-slate-500"
+          className="h-28 w-28 rounded-full mb-5 border-2 border-solid border-slate-500 object-cover"
           width={300}
           height={300}
           src="/marcelo.jpeg"
