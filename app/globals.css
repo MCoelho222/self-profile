@@ -5,11 +5,11 @@
 
 /* Links */
 .purple-link {
-  @apply text-purple-400;
+  @apply text-fuchsia-800;
 }
 
 .blue-link {
-  @apply text-blue-400;
+  @apply text-sky-700;
 }
 
 /* Dark text */
@@ -22,7 +22,7 @@
 }
 /* Main text */
 .main-text {
-  @apply text-base text-slate-400 text-justify;
+  @apply text-slate-400 text-justify;
 }
 
 /* Purple text gradient */
@@ -53,13 +53,16 @@
 
 /* Subtitles */
 .subtitle {
-  @apply text-blue-400 mb-4;
+  @apply text-blue-400;
 }
 
 /* Big screen sizes*/
 @media (min-width: 640px) {
   .title {
-    @apply text-4xl;
+    @apply text-5xl;
+  }
+  .main-text {
+    @apply text-lg;
   }
   .dark-text {
     @apply text-lg;
@@ -73,6 +76,9 @@
 @media (max-width: 639px) {
   .title {
     @apply text-3xl;
+  }
+  .main-text {
+    @apply text-sm;
   }
   .dark-text {
     @apply text-sm;

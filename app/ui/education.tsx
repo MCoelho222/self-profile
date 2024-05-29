@@ -11,8 +11,15 @@ const Education = ({ title, content }: EducationType) => {
               <p className="dark-text">{item.period}</p>
             </div>
             <div className="w-5/6">
-              <p className="main-text mb-1">{item.title} by <a className="blue-gradient" href={item.link}>{item.linkname}</a></p>
+              <p className="main-text mb-1">{item.title} by <a
+                  className="blue-link"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer">{item.linkname}
+                </a>
+              </p>
               <p className="dark-text">{item.description}</p>
+              <p className="dark-text italic">{item.tech.join(', ')}</p>
             </div>
           </div>
         );

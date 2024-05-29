@@ -12,9 +12,15 @@ const Experience = ({ title, content }: ExperienceType) => {
                             <p className="dark-text">{item.period}</p>
                         </div>
                         <div className="w-5/6">
-                            <p className="main-text">{item.title} at <a className="purple-gradient" href={item.link} target="_blank" rel="noopener noreferrer">{item.company}</a></p>
-                            <p className="dark-text mb-4">{item.description}</p>
-                            <p className="dark-text">{item.tech.join(', ')}</p>
+                            <p className="main-text">{item.title} at <a 
+                                    className="purple-link"
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer">{item.company}
+                                </a>
+                            </p>
+                            <p className="dark-text">{item.description}</p>
+                            <p className="dark-text italic">{item.tech.join(', ')}</p>
                         </div>
                     </div>
                 );

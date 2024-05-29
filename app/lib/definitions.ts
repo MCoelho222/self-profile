@@ -1,5 +1,5 @@
 // Info
-export interface Info {
+export interface IInfo {
     name: string;
     email: string;
     linkedin?: string;
@@ -11,7 +11,7 @@ export interface Info {
 
 export interface InfoType {
     title?: string;
-    content: Info;
+    content: IInfo;
 }
 
 // About me
@@ -23,10 +23,10 @@ export interface AboutMeType {
 // Experience
 export interface ExperienceType {
     title?: string;
-    content: Experience[];
+    content: IExperience[];
 }
 
-export interface Experience {
+export interface IExperience {
     period: string;
     company: string;
     title: string;
@@ -38,10 +38,10 @@ export interface Experience {
 // Education
 export interface EducationType {
     title?: string;
-    content: | Education[];
+    content: | IEducation[];
 }
 
-export interface Education {
+export interface IEducation {
     period: string;
     institution: string;
     linkname: string;
@@ -50,4 +50,18 @@ export interface Education {
     level: string;
     description:string;
     tech: string[];
+}
+
+// Certificates
+export interface CertificatesType {
+    title: string;
+    content: ICertificates[];
+}
+
+export interface ICertificates {
+    year: string;
+    title: string;
+    load: string;
+    institution: string;
+    link: string;
 }

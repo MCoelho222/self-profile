@@ -9,21 +9,26 @@ const cvData = {
         titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
     },
     aboutMe: 
-    "I am a fullstack web developer and environmental engineer with doctorate degree. \
-    Currently, I work with python for training AI-based models for generating code for data analysis. \
-    As a fullstack web developer I have worked with python, flask, typescript and react mainly. \
-    As an engineer I have a long experience using python for data analysis and a strong mathematical and statistical knowledge.\
-    To keep learning and improving my capabilities, I'm pursuing a postgraduate in artificial intelligence. \
-    Besides, I am self managing, collaborative, communicative, open to learn, detail-oriented and determined.",
+    "I am a fullstack developer and environmental engineer with strong knowledge in statistical data analysis.\
+     I worked as a professor in higher education on undergraduate courses in Environmental Engineering from 2013 \
+     until 2021, when I decided to make a career transition. Since then, I have been working on diverse projects \
+     in the technology area, mainly using Python and Flask to develop REST APIs (backend), including databases in \
+     Postgres/Postgis, and also JavaScript/TypeScript with React and Vue.js on the frontend . I gained considerable \
+     experience with unit testing and CI/CD pipelines in a Google Cloud and Microsoft Azure environment, as well as \
+     with agile methodologies such as SCRUM. Thanks to my foundation in engineering and statistical data analysis, \
+     I was always able to contribute with refined code reviews regarding mathematical rules and logical reasoning, \
+     ensuring high-performance and error-free deliveries. Currently, I work on training models based on artificial \
+     intelligence to generate codes for data analysis. I am studying a postgraduate degree in artificial intelligence. \
+     I am proficient in English, self-managed, collaborative, communicative, detail-oriented and I am always looking to \
+     improve my knowledge.",
     hardSkills: [
-        "Python", "Flask", "JavaScript", "TypeScript", "HTML", "CSS",
-        "Vue.js", "Postgres", "Postgis", "Docker", "Statistics", "Next.js"
+        "Python", "Flask", "React", "Next.js", "TypeScript", "Docker", "Postgres/Postgis", "data analytics", "Vue.js" 
     ],
-    softSkills:["Self managing", "Collaborative", "Communicative", "Detail-oriented", "Calm", "Organized", "Determined"],
-    language: ["Portuguese (native)", "English (fluent)"],
+    softSkills:["Self managed", "collaborative", "communicative", "detail-oriented", "determined", "SCRUM"],
+    language: ["Portuguese (Brazil, native)", "English (proficient)"],
     education:[
         {
-            period: "2023 - now",
+            period: "2023 - Now",
             institution: "Pontifical Catholic University of Minas Gerais (PUC Minas)",
             linkname: "PUC Minas",
             link: "https://www.pucminas.br/",
@@ -34,7 +39,7 @@ const cvData = {
             for continuous data flow, Machine learning, Neural networks and deep learning, Information retrieval \
             on the web and social networks, Algorithms and genetic programming, Image analysis and computer vision, \
             DataOps and MLOps culture and practices, Recommendation systems, Statistical models, Special topics in machine \
-            learning, Natural language processing, Humanities",
+            learning, Natural language processing, Humanities.",
             tech: ["Python", "TensorFlow", "Pandas", "Numpy", "Scipy", "Scikit-learn",
             "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
         },
@@ -80,9 +85,9 @@ const cvData = {
             tech: ["Excel", "Statistcs", "Mathematics", "QGIS", "Mathematical modeling"],
         },
     ],
-    dev_experience: [
+    experience: [
         {
-            period: "2024 - now",
+            period: "2024 - Now",
             company: "Scale AI",
             title: "Software engineer for AI training data",
             link: "https://scale.com/",
@@ -104,6 +109,14 @@ const cvData = {
             link: "https://conectanuvem.com/",
             description: "Frontend and backend development in google cloud environment.",
             tech: ["Python", "Flask", "Vue.js", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
+        },
+        {
+            period: "2013 - 2021",
+            company: "UFPR and UniEnsino",
+            title: "Professor",
+            link: "https://ambiental.ufpr.br/graduacao/",
+            description: "Professor in higher education of environmental engineering.",
+            tech: [],
         },
     ],
     certificates: [
