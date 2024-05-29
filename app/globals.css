@@ -41,14 +41,14 @@
 
 /* Gray text gradient */
 .gray-gradient {
-  background: linear-gradient(to right, rgb(91, 95, 111), white);
+  background: linear-gradient(to right, rgb(172, 173, 180), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Titles */
 .title {
-  @apply text-slate-300 font-thin mb-6;
+  @apply text-slate-300 font-normal mb-6;
 }
 
 /* Subtitles */
@@ -59,7 +59,7 @@
 /* Big screen sizes*/
 @media (min-width: 640px) {
   .title {
-    @apply text-5xl;
+    @apply text-4xl;
   }
   .main-text {
     @apply text-lg;
