@@ -3,8 +3,8 @@ import '../globals.css'
 
 const AboutMe = ({ title, content }: AboutMeType) => {
   return (
-    <div className="mb-20">
-      <p className="title gray-gradient line-through">{title}</p>
+    <div className="mb-10">
+      <p className="title gray-gradient">{title}</p>
       <p className="dark-text">{content}</p>
     </div>
   );

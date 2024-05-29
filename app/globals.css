@@ -2,6 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Links */
+.purple-link {
+  @apply text-purple-400;
+}
+
+.blue-link {
+  @apply text-blue-400;
+}
+
+/* Dark text */
+.dark-text {
+  @apply text-slate-500 text-justify;
+}
+
+.dark-text-sm {
+  @apply text-sm text-slate-500 text-justify;
+}
+/* Main text */
+.main-text {
+  @apply text-base text-slate-400 text-justify;
+}
+
+/* Purple text gradient */
+.purple-gradient {
+  background: linear-gradient(to right, rgb(139, 46, 139), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Blue text gradient */
+.blue-gradient {
+  background: linear-gradient(to right, rgb(38, 112, 182), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gray text gradient */
+.gray-gradient {
+  background: linear-gradient(to right, rgb(91, 95, 111), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Titles */
+.title {
+  @apply text-slate-300 font-thin mb-6;
+}
+
+/* Subtitles */
+.subtitle {
+  @apply text-blue-400 mb-4;
+}
+
+/* Big screen sizes*/
+@media (min-width: 640px) {
+  .title {
+    @apply text-4xl;
+  }
+  .dark-text {
+    @apply text-lg;
+  }
+  .subtitle {
+    @apply text-lg;
+  }
+}
+
+/* Small screen sizes */
+@media (max-width: 639px) {
+  .title {
+    @apply text-3xl;
+  }
+  .dark-text {
+    @apply text-sm;
+  }
+  .subtitle {
+    @apply text-sm;
+  }
+}
+
+
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -38,57 +120,6 @@ body {
     text-wrap: balance;
   }
 } */
-/* Links */
-.purple-link {
-  @apply text-purple-400;
-}
 
-.blue-link {
-  @apply text-blue-400;
-}
-
-/* Dark text */
-.dark-text {
-  @apply text-lg text-slate-500 text-justify;
-}
-
-.dark-text-sm {
-  @apply text-sm text-slate-500 text-justify;
-}
-/* Main text */
-.main-text {
-  @apply text-lg text-slate-400 text-justify;
-}
-
-/* Purple text gradient */
-.purple-gradient {
-  background: linear-gradient(to right, rgb(139, 46, 139), white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Blue text gradient */
-.blue-gradient {
-  background: linear-gradient(to right, rgb(38, 112, 182), white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Gray text gradient */
-.gray-gradient {
-  background: linear-gradient(to right, rgb(91, 95, 111), white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Titles */
-.title {
-  @apply text-5xl text-slate-300 font-thin mb-12;
-}
-
-/* Subtitles */
-.subtitle {
-  @apply text-lg text-blue-400 mb-4;
-}
 
 

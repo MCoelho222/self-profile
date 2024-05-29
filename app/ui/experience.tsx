@@ -3,11 +3,11 @@ import { ExperienceType } from '../lib/definitions';
 
 const Experience = ({ title, content }: ExperienceType) => {
     return (
-        <div className="mb-20">
+        <div className="mb-10">
             <p className="purple-gradient title">{title}</p>
             {content.map((item) => {
                 return (
-                    <div className="flex flex-row w-full mb-8" key={item.title}>
+                    <div className="flex flex-row w-full mb-5" key={item.title}>
                         <div className="w-1/6">
                             <p className="dark-text">{item.period}</p>
                         </div>

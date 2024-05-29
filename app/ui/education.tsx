@@ -2,11 +2,11 @@ import { EducationType } from "../lib/definitions";
 
 const Education = ({ title, content }: EducationType) => {
   return (
-    <div className="mb-20">
+    <div className="mb-10">
       <p className="title blue-gradient">{title}</p>
       {content.map((item) => {
         return (
-          <div className="flex flex-row w-full mb-6" key={item.title}>
+          <div className="flex flex-row w-full mb-4" key={item.title}>
             <div className="w-1/6">
               <p className="dark-text">{item.period}</p>
             </div>
