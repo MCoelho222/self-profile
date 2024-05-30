@@ -8,19 +8,21 @@ const cvData = {
         company: 'Scale AI',
         titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
     },
+    welcome: "Hello, welcome to my profile! You'll find I complete description of my professional tragetory. But besides of it all, \
+    I am passionate about nature, music and programming. I have two kids, live close to the beach, in a beautiful place that inspires me in my working time and to have a very healthy live. \
+    When things go wrong, I just keep calm and hard working and everything gets back to the track.",
     aboutMe: 
-    "I am a fullstack developer and environmental engineer with strong knowledge in statistical data analysis.\
-     I worked as a professor in higher education on undergraduate courses in Environmental Engineering from 2013 \
-     until 2021, when I decided to make a career transition. Since then, I have been working on diverse projects \
-     in the technology area, mainly using Python and Flask to develop REST APIs (backend), including databases in \
-     Postgres/Postgis, and also JavaScript/TypeScript with React and Vue.js on the frontend . I gained considerable \
-     experience with unit testing and CI/CD pipelines in a Google Cloud and Microsoft Azure environment, as well as \
-     with agile methodologies such as SCRUM. Thanks to my foundation in engineering and statistical data analysis, \
-     I was always able to contribute with refined code reviews regarding mathematical rules and logical reasoning, \
-     ensuring high-performance and error-free deliveries. Currently, I work on training models based on artificial \
-     intelligence to generate codes for data analysis. I am studying a postgraduate degree in artificial intelligence. \
-     I am proficient in English, self-managed, collaborative, communicative, detail-oriented and I am always looking to \
-     improve my knowledge.",
+    "I am a full-stack developer and environmental engineer with strong expertise in statistical data analysis. \
+    I worked as a professor in higher education for undergraduate courses in Environmental Engineering from 2013 until 2021, \
+    when I decided to transition my career. Since then, I have been involved in diverse projects in the technology sector, \
+    primarily using Python and Flask to develop REST APIs (backend), including databases in Postgres/PostGIS. Additionally, \
+    I work with JavaScript/TypeScript using React and Vue.js on the frontend. \
+    I have gained considerable experience with unit testing and CI/CD pipelines in Google Cloud and Microsoft Azure environments, \
+    as well as with agile methodologies such as SCRUM. \
+    My foundation in engineering and statistical data analysis allows me to contribute refined code reviews focused on mathematical rules and logical reasoning, \
+    ensuring high-performance and error-free deliveries. Currently, \
+    I am training models based on artificial intelligence to generate code for data analysis and studying for a postgraduate degree in artificial intelligence. \
+    I am proficient in English, self-managed, collaborative, communicative, detail-oriented, and always looking to expand my knowledge.",
     hardSkills: [
         "Python", "Flask", "React", "Next.js", "TypeScript", "Docker", "Postgres/Postgis", "data analytics", "Vue.js" 
     ],
@@ -34,7 +36,7 @@ const cvData = {
             link: "https://www.pucminas.br/",
             title: "Artificial Intelligence Specialist",
             level: "Postgraduate",
-            description: "The course has 16 modules: Programming for data science, Data visualization, \
+            description: "360 h with 16 modules: Programming for data science, Data visualization, \
             General statistics, Modeling and data preparation for machine learning, Integration and processing \
             for continuous data flow, Machine learning, Neural networks and deep learning, Information retrieval \
             on the web and social networks, Algorithms and genetic programming, Image analysis and computer vision, \

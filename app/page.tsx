@@ -18,6 +18,9 @@ export default function Home() {
           alt="Marcelo"
         />
         <Info content={cvData.info}/>
+        <div className="flex flex-row justify-center pt-10 px-4">
+          <p className="text-slate-500 text-sm text-justify">{cvData.welcome}</p>
+        </div>
       </div>
       <div className="w-full pt-8 sm:w-3/4 sm:pl-[10%]">
         <AboutMe title='About me' content={cvData.aboutMe} />
