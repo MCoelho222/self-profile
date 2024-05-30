@@ -4,7 +4,7 @@ import { ExperienceType } from '../lib/definitions';
 const Experience = ({ title, content }: ExperienceType) => {
     return (
         <div className="mb-10">
-            <p className="purple-gradient title">{title}</p>
+            <p className="title">{title}</p>
             {content.map((item) => {
                 return (
                     <div className="flex flex-row w-full mb-5" key={item.title}>
@@ -13,7 +13,7 @@ const Experience = ({ title, content }: ExperienceType) => {
                         </div>
                         <div className="w-5/6">
                             <p className="main-text">{item.title} at <a 
-                                    className="purple-link"
+                                    className="blue-link"
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer">{item.company}
