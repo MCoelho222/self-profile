@@ -11,7 +11,7 @@ const Certificates = ({ title, content }: CertificatesType) => {
                         <p className="dark-text">{item.year}</p>
                     </div>
                     <div className="w-5/6 flex flex-row gap-2 justify-start">
-                        <p className="main-text">{item.title} by <span className="dark-text">{item.institution}</span> - <a
+                        <p className="main-text">{item.title} <span className="dark-text">by {item.institution}</span> - <a
                             className="blue-link"
                             href={item.link}
                             target="_blank"

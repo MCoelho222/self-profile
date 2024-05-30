@@ -13,7 +13,7 @@ const Experience = ({ title, content }: ExperienceType) => {
                         </div>
                         <div className="w-5/6">
                             <p className="main-text">{item.title} at <a 
-                                    className="blue-link"
+                                    className="purple-link"
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer">{item.company}
