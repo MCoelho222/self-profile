@@ -10,7 +10,7 @@ const cvData = {
     },
     welcome: "Hello, welcome to my profile! You'll find I complete description of my professional tragetory. But besides of it all, \
     I am passionate about nature, music and programming. I have two kids, live close to the beach, in a beautiful place that inspires me in my working time and to have a very healthy live. \
-    When things go wrong, I just keep calm and hard working and everything gets back to the track.",
+    When things goes wrong, I just keep calm and hard working and everything gets back to the track.",
     aboutMe: 
     "I am a full-stack developer and environmental engineer with strong expertise in statistical data analysis. \
     I worked as a professor in higher education for undergraduate courses in Environmental Engineering from 2013 until 2021, \
