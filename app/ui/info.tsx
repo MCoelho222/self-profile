@@ -9,7 +9,7 @@ const Info = ({ title, content }: InfoType) => {
                 <p className="text-xl text-slate-400 text-justify mb-2">{content.name}</p>
                 {content.titles.map((item) => {
                     return (
-                        <p>{item}</p>
+                        <p key="item">{item}</p>
                     )
                 })}
             </div>
