@@ -8,10 +8,10 @@ const cvData = {
         company: 'Scale AI',
         titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
     },
-    welcome: "Hello, welcome to my profile! Here, you'll find the most important parts of my professional history. \
-    But speaking about me, I have a simple life style, love being close to the nature, music and programming. \
-    I have a wife, two grown kids, live close to the beach, love making BBQ on sundays. I really enjoy working remotely \
-    and my goal is to work with AI models, data analysis and web development.",
+    welcome: "Hello, welcome to my profile! Here, you'll find the most important steps of my professional career. \
+    Beyond hard skills, I am a very determined and focused person, always running after something new. I enjoy working with \
+    numbers, statistics, graphics, and motivated teams. I'm a very positive person who never get away from challenges. I really enjoy working remotely \
+    and my current goal is work with AI models, data analysis, and web development.",
     aboutMe: 
     "I am a full-stack developer and environmental engineer with strong expertise in statistical data analysis. \
     I worked as a professor in higher education for undergraduate courses in Environmental Engineering from 2013 until 2021, \

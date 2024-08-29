@@ -14,7 +14,7 @@ export default function Home() {
           className="h-32 w-32 rounded-full mb-5 border-2 border-solid border-slate-500 object-cover"
           width={300}
           height={300}
-          src="/mcoelho2024.jpg"
+          src="/mcoelho2024.JPEG"
           alt="Marcelo"
         />
         <Info content={cvData.info}/>
