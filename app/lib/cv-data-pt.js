@@ -8,26 +8,25 @@ const cvData = {
         company: 'Scale AI',
         titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
     },
-    welcome: "Hello, and welcome to my profile! 🚀 Here, you'll find the key milestones of my professional journey. \
-    I'm a determined and focused person, passionate about challenges and always looking to learn and grow. I have a \
-    strong interest in numbers, statistics, and data visualization, and I love working with motivated teams. My positive \
-    mindset drives me to tackle any obstacle head-on. Plus, remote work is something that truly inspires me! Currently, \
-    my goal is to work with AI models, data analysis, and web development, combining technology and innovation to create \
-    impactful solutions. Let’s connect and exchange ideas!",
+    welcome: "Olá, seja muito bem-vindo ao meu perfil! 🚀 Aqui, você encontrará os marcos mais importantes da minha trajetória profissional. \
+    Sou uma pessoa determinada, focada e apaixonada por desafios, sempre buscando aprender e evoluir. \
+    Tenho um grande interesse por números, estatísticas e gráficos, e adoro colaborar com equipes motivadas. \
+    Minha mentalidade positiva me impulsiona a encarar qualquer obstáculo de frente. Além disso, trabalhar remotamente é algo que me motiva ainda mais! \
+    Atualmente, meu objetivo é atuar com modelos de IA, análise de dados e desenvolvimento web, unindo tecnologia e inovação para criar soluções impactantes. Vamos trocar ideias?",
     aboutMe: 
-    "I am a software developer specializing in Python, JavaScript, and TypeScript. Currently, I work at an international company \
-    training AI-based models for generating various types of code in Python. Recently, I completed a postgraduate degree where I \
-    was able to deepen my knowledge in the incredible world of artificial intelligence, using libraries such as scikit-learn, TensorFlow, \
-    PyTorch, and Pandas.\n\n A major differentiator in my skills as a developer is my background in environmental engineering, including \
-    a PhD focused on statistical analysis of environmental data using Python. This academic foundation has provided me with solid knowledge \
-    in statistics, mathematics, and computer programming, as well as excellent logical reasoning and a critical approach to problem-solving.\n\n Since \
-    my career transition in 2021, I have worked on diverse technology projects, mainly using Python and Flask for REST API development, PostgreSQL/PostGIS \
-    for databases, Docker containers in a distributed microservices system, RabbitMQ for event-driven systems, GeoServer for mapping applications, \
-    and JavaScript/TypeScript with React and Vue.js for user interface development.\n\n I have gained considerable experience with unit testing and CI/CD\
-     pipelines in Google Cloud and Microsoft Azure environments, as well as with agile methodologies such as Scrum. Thanks to my background in engineering \
-     and statistical data analysis, I have always been able to contribute with refined code reviews regarding mathematical rules and logical reasoning, \
-     ensuring high-performance and error-free deliveries.\n\n Other skills and personal characteristics: advanced English (reading, writing, and speaking), \
-     self-managing, organized, collaborative, communicative, detail-oriented, and always eager to enhance my knowledge.",
+    "Sou desenvolvedor de software especializado em Python, JavaScript e TypeScript. Atualmente, trabalho em uma empresa internacional \
+    com treinamento de modelos baseados em IA para geração de códigos diversos na linguagem Python. Recentemente, concluí uma pós-graduação \
+    na qual pude me aprofundar neste incrível universo da inteligência artificial, utilizando bibliotecas como scikit-learn, TensorFlow, PyTorch\
+     e Pandas.\n\n Um grande diferencial em minhas habilidades como desenvolvedor é minha formação em engenharia ambiental, incluindo um doutorado \
+     focado em análise estatística de dados ambientais, utilizando Python. Essa base acadêmica me proporcionou sólidos conhecimentos estatísticos, \
+     matemáticos e de programação de computadores, assim como excelente raciocínio lógico e visão crítica dos problemas.\n\n Desde minha transição \
+     de carreira, em 2021, trabalhei em projetos diversificados na área de tecnologia, utilizando principalmente Python e Flask para o desenvolvimento \
+     de REST APIs, PostgreSQL/PostGIS para banco de dados, containers Docker em um sistema distribuído em microserviços, RabbitMQ para sistemas baseados \
+     em eventos, GeoServer para aplicações em mapas e JavaScript/TypeScript com React e Vue.js no desenvolvimento de interfaces do usuário.\n\n Adquiri \
+     experiência considerável com testes unitários e pipelines de CI/CD em ambientes Google Cloud e Microsoft Azure, assim como com metodologias ágeis como \
+     o Scrum. Graças à minha base em engenharia e análise estatística de dados, sempre pude contribuir com revisões refinadas de código quanto às regras \
+     matemáticas e ao raciocínio lógico, garantindo entregas de alta performance e sem erros.\n\n Outras habilidades e características pessoais: inglês \
+     avançado (leitura, escrita e fala), autogerenciável, organizado, colaborativo, comunicativo, detalhista e sempre em busca de aprimorar meus conhecimentos.",
     hardSkills: [
         "Python", "Machine Learning", "Deep Learinng", "Data Analysis", "Docker", "SQL", "NoSQL", "NLP", "React", "TypeScript" 
     ],
@@ -41,12 +40,12 @@ const cvData = {
             link: "https://www.pucminas.br/",
             title: "Artificial Intelligence Specialist",
             level: "Postgraduate",
-            description: "360 h with 16 modules: Programming for data science, Data visualization, \
+            description: "360 h with 15 modules: Programming for data science, Data visualization, \
             General statistics, Modeling and data preparation for machine learning, Integration and processing \
             for continuous data flow, Machine learning, Neural networks and deep learning, Information retrieval \
             on the web and social networks, Algorithms and genetic programming, Image analysis and computer vision, \
             DataOps and MLOps culture and practices, Recommendation systems, Statistical models, Special topics in machine \
-            learning, Natural language processing, Humanities.",
+            learning, Natural language processing.",
             tech: ["Python", "TensorFlow", "Pandas", "Numpy", "Scipy", "Scikit-learn",
             "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
         },
