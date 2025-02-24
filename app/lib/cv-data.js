@@ -6,16 +6,13 @@ const cvData = {
         name: 'Marcelo Coelho',
         job: 'Software Engineer for AI Training Data',
         company: 'Scale AI',
-        titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
+        titles: ['Environmental Engineer, DSc.', 'Fullstack Developer', 'AI Specialist'],
     },
     welcome: "Hello, and welcome to my profile! 🚀 Here, you'll find the key milestones of my professional journey. \
-    I'm a determined and focused person, passionate about challenges and always looking to learn and grow. I have a \
-    strong interest in numbers, statistics, and data visualization, and I love working with motivated teams. My positive \
-    mindset drives me to tackle any obstacle head-on. Plus, remote work is something that truly inspires me! Currently, \
-    my goal is to work with AI models, data analysis, and web development, combining technology and innovation to create \
+    Currently, my goal is to work with AI models, data analysis, and web development, combining technology and innovation to create \
     impactful solutions. Let’s connect and exchange ideas!",
     aboutMe: 
-    "I am a software developer specializing in Python, JavaScript, and TypeScript. Currently, I work at an international company \
+    "I am a Brazilian software developer specializing in Python, JavaScript, and TypeScript. Currently, I work at an international company \
     training AI-based models for generating various types of code in Python. Recently, I completed a postgraduate degree where I \
     was able to deepen my knowledge in the incredible world of artificial intelligence, using libraries such as scikit-learn, TensorFlow, \
     PyTorch, and Pandas.\n\n A major differentiator in my skills as a developer is my background in environmental engineering, including \

@@ -20,7 +20,7 @@ const Experience = ({ title, content }: ExperienceType) => {
                                 </a>
                             </p>
                             <p className="dark-text">{item.description}</p>
-                            <p className="dark-text italic">{item.tech.join(', ')}</p>
+                            <p className="techs">{item.tech.join(', ')}</p>
                         </div>
                     </div>
                 );
