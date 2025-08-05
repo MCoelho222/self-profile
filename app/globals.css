@@ -11,13 +11,13 @@
   @apply text-sky-500;
 }
 
-/* Skills and Description */
-.skills {
-  @apply text-slate-500 text-justify mt-3 font-mono;
+/* Description */
+.description {
+  @apply text-slate-500 font-mono;
 }
 
-.description {
-  @apply text-slate-500 text-justify font-mono font-thin mt-3;
+.description-justify {
+  @apply text-slate-500 text-justify font-mono;
 }
 
 /* Titles */
@@ -26,7 +26,7 @@
 }
 
 .subtitle {
-  @apply text-slate-400 text-xl mt-3;
+  @apply text-slate-400 text-xl;
 }
 
 .info-title {
@@ -37,6 +37,11 @@
   @apply text-slate-500 font-mono;
 }
 
+/* Skills */
+.skills {
+  @apply text-green-700 font-mono;
+}
+
 /* Small screen sizes */
 @media (max-width: 639px) {
   .title {
@@ -44,14 +49,23 @@
   }
 
   .subtitle {
-    @apply text-sm;
+    @apply text-base;
   }
 
-  .skills {
+
+  .info-subtitle {
     @apply text-sm;
   }
 
   .description {
+    @apply text-sm;
+  }
+
+  .description-justify {
+    @apply text-sm;
+  }
+
+  .skills {
     @apply text-sm;
   }
 }
