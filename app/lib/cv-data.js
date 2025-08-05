@@ -132,6 +132,13 @@ const cvData = {
     ],
     certificates: [
         {
+            year: "2025",
+            title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
+            load: "360 h",
+            institution: "PUC Minas",
+            link: "https://drive.google.com/file/d/1O9PCfPWNZECLgrp5Gjgr8exK1pPeHrZv/view?usp=sharing",
+        },
+        {
             year: "2024",
             title: "Complexity Calculation",
             load: "8 h",
