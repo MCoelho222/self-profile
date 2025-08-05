@@ -1,26 +1,31 @@
-import '../globals.css';
+import React from 'react';
 import { ExperienceType } from '../lib/definitions';
+import Skills from './Skills';
 
 const Experience = ({ title, content }: ExperienceType) => {
     return (
-        <div className="mb-10">
+        <div className="mb-4 sm:mb-10">
             <p className="title">{title}</p>
             {content.map((item) => {
                 return (
-                    <div className="flex flex-row w-full mb-5" key={item.title}>
-                        <div className="w-1/6">
-                            <p className="dark-text">{item.period}</p>
+                    <div className="flex flex-row w-full mb-6" key={item.title}>
+                        <div className="w-1/6 description">
+                            <p>{item.period}</p>
                         </div>
                         <div className="w-5/6">
-                            <p className="main-text">{item.title} at <a 
+                            <p className="subtitle">{item.title} at <a 
                                     className="blue-link"
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer">{item.company}
                                 </a>
                             </p>
-                            <p className="dark-text">{item.description}</p>
-                            <p className="techs">{item.tech.join(', ')}</p>
+                            <ul>
+                                {item.description.map((desc, index) => (
+                                    <li className="description" key={index}>- {desc}</li>
+                                ))}
+                            </ul>
+                            <Skills content={item.tech} />
                         </div>
                     </div>
                 );
