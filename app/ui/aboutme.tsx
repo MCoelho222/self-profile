@@ -16,7 +16,7 @@ const AboutMe = ({ title, content }: AboutMeType) => {
   return (
     <div className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
-      <p className="description">{renderTextWithLineBreaks(content)}</p>
+      <p className="description-justify">{renderTextWithLineBreaks(content)}</p>
     </div>
   );
 };

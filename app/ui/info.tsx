@@ -13,7 +13,7 @@ const Info = ({ title, content }: InfoType) => {
         })}
       </div>
       <p className="info-subtitle mb-8 text-center">{content.email}</p>
-      <div className="text-slate-400 text-3xl flex flex-row gap-3 justify-center mb-4">
+      <div className="text-slate-400 text-2xl sm:text-3xl flex flex-row gap-3 justify-center mb-4">
         <a href={content.github} target="_blank" rel="noopener noreferrer">
           <GrGithub />
         </a>
