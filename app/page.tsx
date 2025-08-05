@@ -1,9 +1,9 @@
-import AboutMe from "./ui/aboutme";
-import Education from "./ui/education";
-import Experience from "./ui/experience";
-import Certificates from "./ui/certificates";
+import AboutMe from "./ui/AboutMe";
+import Education from "./ui/Education";
+import Experience from "./ui/Experience";
+import Certificates from "./ui/Certificates";
 import Image from "next/image";
-import Info from "./ui/info";
+import Info from "./ui/SidebarInfo";
 
 export default function Home() {
   const { cvData } = require("./lib/cv-data.js");
