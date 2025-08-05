@@ -8,102 +8,102 @@ const cvData = {
         company: 'Scale AI',
         titles: ['Environmental Engineer, DSc.', 'Fullstack Developer', 'AI Specialist'],
     },
-    welcome: "Hello, and welcome to my profile! 🚀 Here, you'll find the key milestones of my professional journey. \
-    Currently, my goal is to work with AI models, data analysis, and web development, combining technology and innovation to create \
-    impactful solutions. Let’s connect and exchange ideas!",
+    welcome: "Enjoy the ride — and if it resonates with you, let’s connect and share ideas!",
     aboutMe: 
-    "I am a Brazilian software developer specializing in Python, JavaScript, and TypeScript. Currently, I work at an international company \
-    training AI-based models for generating various types of code in Python. Recently, I completed a postgraduate degree where I \
-    was able to deepen my knowledge in the incredible world of artificial intelligence, using libraries such as scikit-learn, TensorFlow, \
-    PyTorch, and Pandas.\n\n A major differentiator in my skills as a developer is my background in environmental engineering, including \
-    a PhD focused on statistical analysis of environmental data using Python. This academic foundation has provided me with solid knowledge \
-    in statistics, mathematics, and computer programming, as well as excellent logical reasoning and a critical approach to problem-solving.\n\n Since \
-    my career transition in 2021, I have worked on diverse technology projects, mainly using Python and Flask for REST API development, PostgreSQL/PostGIS \
-    for databases, Docker containers in a distributed microservices system, RabbitMQ for event-driven systems, GeoServer for mapping applications, \
-    and JavaScript/TypeScript with React and Vue.js for user interface development.\n\n I have gained considerable experience with unit testing and CI/CD\
-     pipelines in Google Cloud and Microsoft Azure environments, as well as with agile methodologies such as Scrum. Thanks to my background in engineering \
-     and statistical data analysis, I have always been able to contribute with refined code reviews regarding mathematical rules and logical reasoning, \
-     ensuring high-performance and error-free deliveries.\n\n Other skills and personal characteristics: advanced English (reading, writing, and speaking), \
-     self-managing, organized, collaborative, communicative, detail-oriented, and always eager to enhance my knowledge.",
+    "Brazilian software developer with strong expertise in Python, JavaScript, and TypeScript.\
+     I combine a solid background in environmental engineering (PhD) and AI (postgrad) with experience in developing REST APIs (Flask),\
+      working with PostgreSQL/PostGIS, Docker, RabbitMQ, and cloud environments (GCP, Azure). I’ve contributed to microservices, mapping \
+      platforms, and data-heavy applications, always focusing on clean, efficient, and logically sound code. \
+      Skilled in AI tools like scikit-learn, TensorFlow, and PyTorch, and familiar with frontend frameworks like React and Vue. \
+      Strong in English, self-driven, collaborative, and detail-oriented.",
     hardSkills: [
-        "Python", "Machine Learning", "Deep Learinng", "Data Analysis", "Docker", "SQL", "NoSQL", "NLP", "React", "TypeScript" 
+        "Python", "Machine Learning", "Deep Learning", "Data Analysis", "Docker", "SQL", "NoSQL", "NLP", "React", "TypeScript" 
     ],
     softSkills:["Self managed", "collaborative", "communicative", "detail-oriented", "determined", "SCRUM"],
     language: ["Portuguese (Brazil, native)", "English (proficient)"],
     education:[
         {
             period: "2023 - 2025",
-            institution: "Pontifical Catholic University of Minas Gerais (PUC Minas)",
+            institution: "Pontifical Catholic University of Minas Gerais",
             linkname: "PUC Minas",
             link: "https://www.pucminas.br/",
-            title: "Artificial Intelligence Specialist",
+            title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
             level: "Postgraduate",
-            description: "360 h with 16 modules: Programming for data science, Data visualization, \
-            General statistics, Modeling and data preparation for machine learning, Integration and processing \
-            for continuous data flow, Machine learning, Neural networks and deep learning, Information retrieval \
-            on the web and social networks, Algorithms and genetic programming, Image analysis and computer vision, \
-            DataOps and MLOps culture and practices, Recommendation systems, Statistical models, Special topics in machine \
-            learning, Natural language processing, Humanities.",
-            tech: ["Python", "TensorFlow", "Pandas", "Numpy", "Scipy", "Scikit-learn",
-            "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
+            description: "The course load was 360 hours, covering topics such as programming for data science, data visualization, \
+            deneral statistics, modeling and data preparation for machine learning, integration and processing \
+            for continuous data flow, machine learning, neural networks and deep learning, information retrieval \
+            on the web and social networks, algorithms and genetic programming, image analysis and computer vision, \
+            dataOps and MLOps culture and practices, recommendation systems, statistical models, special topics in machine \
+            learning, natural language processing, humanities."
         },
         {
             period: "2022 - 2023",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Researcher",
+            title: "Post doctoral Researcher",
             level: "Post doctoral",
-            description:"Monitoring and analysis of water quality data under solar electric power plants installed \
-            in reservoirs caused by river dams.",
-            tech: ["Python", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
+            description:"Monitoring and analysis of water quality data under floating solar power plants installed \
+            in reservoirs caused by river dams. The analysis were performed using Python, Pandas, Numpy, Matplotlib, Seaborn, \
+            and statistical methods to identify trends, seasonal patterns, and anomalies in the data."
         },
         {
             period: "2015 - 2019",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "PhD.",
+            title: "Environmental Engineer, DSc.",
             level: "Doctorate degree",
-            description:"Uncertainty analysis in the statistical and stochastic context of water quality time series.",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "Statistcs", "Mathematics", "QGIS"],
+            description:"A research about uncertainty analysis in the statistical and stochastic context of water quality time series. The goal was to \
+            develop and apply methods to quantify and reduce uncertainties in water quality data, improving the reliability of data-driven \
+            decisions in water resource management. The research was performed using Python, Pandas, Numpy, Scipy, Matplotlib, and statistical \
+            techniques such as Monte Carlo simulations, Bayesian inference, and time series analysis.",
         },
         {
             period: "2011 - 2013",
             institution: "Federal University of Paraná (UFPR)",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Master",
+            title: "Master's degree",
             level: "Master's degree",
-            description:"Water quality monitoring strategy for the management of water resources in urban basins",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "Statistcs", "Mathematics", "QGIS"],
+            description:"A research about water quality monitoring strategy for the management of water resources in urban basins. \
+            The research focused on developing and applying methods for effective monitoring and assessment of water quality in urban environments. The tools used includes QGIS and Excel."
         },
         {
             period: "2004 - 2010",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Environmental engineer",
+            title: "Environmental Engineer",
             level: "Graduate",
-            description:"",
-            tech: ["Excel", "Statistcs", "Mathematics", "QGIS", "Mathematical modeling"],
+            description:"Environmental sciences, engineering principles, and sustainable practices."
         },
     ],
     experience: [
         {
             period: "2024 - Now",
             company: "Scale AI",
-            title: "Software engineer for AI training data",
+            title: "Software Engineer for AI Training Data",
             link: "https://scale.com/",
-            description: "Analyze and improve the responses of an AI-based model to generate codes for database analysis.",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "GenAI"],
+            description: [
+                "Reviewed and refactored backend code generated by LLMs.",
+                "Acted as Squad Leader, coordinating distributed team efforts and ensuring code quality.",
+                "Gained hands-on experience with distributed systems, algorithm design, and backend service evaluation."
+            ],
+            tech: ["Python", "Python", "TypeScript", "JavaScript", "Java", "C++", "C#", "GenAI"],
         },
         {
             period: "2023 - 2024",
             company: "Pix Force",
             title: "Fullstack web developer",
             link: "https://pixforce.ai/",
-            description: "Frontend and backend development with map-based application to monitor fire risk near to power lines.",
+            description: [
+                "Designed and developed a map-based application for fire risk detection near power lines, with geofencing features.",
+                "Built microservices in Python (Flask) deployed on Azure, handling real-time georeferenced data.",
+                "Used PostgreSQL with PostGIS to manage and query geospatial data.",
+                "Implemented event-driven architecture using RabbitMQ (Kafka-like) for inter-service communication.",
+                "Worked with CI/CD pipelines, automated testing, and cloud-native deployments."
+            ],
             tech: ["Python", "Flask", "React", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
         },
         {
@@ -111,16 +111,23 @@ const cvData = {
             company: "Conecta Nuvem",
             title: "Fullstack web developer",
             link: "https://conectanuvem.com/",
-            description: "Frontend and backend development in google cloud environment.",
+            description: [
+                "Developed backend services for access control integrated with Google Workspace, deployed on GCP.",
+                "Built APIs in Python (Flask) and frontends with Vue.js in a microservices architecture.",
+                "Strengthened backend development, cloud deployment, and distributed collaboration skills."
+            ],
             tech: ["Python", "Flask", "Vue.js", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
         },
         {
             period: "2013 - 2021",
-            company: "UFPR and UniEnsino",
+            company: "Federal University of Paraná and UniEnsino",
             title: "Professor",
             link: "https://ambiental.ufpr.br/graduacao/",
-            description: "Professor in higher education of environmental engineering.",
-            tech: [],
+            description: [
+                "Taught courses and conducted research in GIS and spatial analysis.",
+                "Built foundational expertise in geospatial systems, enabling effective work in geofencing and real-world mapping."
+            ],
+            tech: ["QGIS", "Excel"],
         },
     ],
     certificates: [

@@ -31,7 +31,7 @@ export interface IExperience {
     company: string;
     title: string;
     link: string;
-    description: string;
+    description: string[];
     tech: string[];
 }
 
@@ -49,7 +49,6 @@ export interface IEducation {
     title: string;
     level: string;
     description:string;
-    tech: string[];
 }
 
 // Certificates
@@ -64,4 +63,10 @@ export interface ICertificates {
     load: string;
     institution: string;
     link: string;
+}
+
+//Skills
+export interface SkillsType {
+    title?: string;
+    content: string[];
 }

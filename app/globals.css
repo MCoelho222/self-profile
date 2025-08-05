@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Links */
 .purple-link {
   @apply text-fuchsia-800;
@@ -12,21 +11,49 @@
   @apply text-sky-500;
 }
 
-/* Dark text */
-.dark-text {
-  @apply text-slate-600 text-justify;
+/* Skills and Description */
+.skills {
+  @apply text-slate-500 text-justify mt-3 font-mono;
 }
 
-.dark-text-sm {
-  @apply text-sm text-slate-600 text-justify;
-}
-/* Main text */
-.main-text {
-  @apply text-slate-700 text-justify font-medium;
+.description {
+  @apply text-slate-500 text-justify font-mono font-thin mt-3;
 }
 
-.techs {
-  @apply text-slate-600 text-justify mt-3;
+/* Titles */
+.title {
+  @apply text-4xl text-slate-400 mb-6;
+}
+
+.subtitle {
+  @apply text-slate-400 text-xl mt-3;
+}
+
+.info-title {
+  @apply text-slate-300 text-lg mt-2 mb-3;
+}
+
+.info-subtitle {
+  @apply text-slate-500 font-mono;
+}
+
+/* Small screen sizes */
+@media (max-width: 639px) {
+  .title {
+    @apply text-xl mb-4;
+  }
+
+  .subtitle {
+    @apply text-sm;
+  }
+
+  .skills {
+    @apply text-sm;
+  }
+
+  .description {
+    @apply text-sm;
+  }
 }
 
 /* Purple text gradient */
@@ -49,93 +76,3 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* Titles */
-.title {
-  @apply text-slate-800 font-normal mb-4;
-}
-
-/* Subtitles */
-.subtitle {
-  @apply text-blue-600;
-}
-
-/* Big screen sizes*/
-@media (min-width: 640px) {
-  .title {
-    @apply text-3xl;
-  }
-  .main-text {
-    @apply text-lg;
-  }
-  .dark-text {
-    @apply text-lg;
-  }
-  .subtitle {
-    @apply text-lg;
-  }
-  .techs {
-    @apply text-lg
-  }
-}
-
-/* Small screen sizes */
-@media (max-width: 639px) {
-  .title {
-    @apply text-xl;
-  }
-  .main-text {
-    @apply text-sm;
-  }
-  .dark-text {
-    @apply text-sm;
-  }
-  .subtitle {
-    @apply text-sm;
-  }
-  .techs {
-    @apply text-sm
-  }
-}
-
-
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  height: 100vh;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
-
-
