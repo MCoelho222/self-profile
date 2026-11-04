@@ -2,7 +2,7 @@ import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 import { CertificatesType } from "../lib/definitions";
 
-const Certificates = ({ title, content }: CertificatesType) => {
+const Certificates = ({ title, content, viewLabel = "View certificate" }: CertificatesType) => {
   return (
     <section className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
@@ -29,7 +29,7 @@ const Certificates = ({ title, content }: CertificatesType) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View certificate
+                {viewLabel}
                 <LuArrowUpRight aria-hidden="true" />
               </a>
             </p>

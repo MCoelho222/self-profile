@@ -1,5 +1,25 @@
 // Source of truth: englishcv.pdf (last updated October 27, 2026)
 const cvData = {
+    labels: {
+        meta: {
+            title: "Marcelo Coelho — CV",
+            description: "Environmental Engineer, PhD & Fullstack Developer: data science, statistics, and software engineering.",
+        },
+        sections: {
+            aboutMe: "About me",
+            education: "Education",
+            skills: "Skills",
+            experience: "Experience",
+            certifications: "Certifications",
+            languages: "Languages",
+            publications: "Publications",
+        },
+        viewCertificate: "View certificate",
+        technologies: "Technologies",
+        proficiency: "proficiency",
+        outOf: "out of",
+        switchLanguage: "Language",
+    },
     info: {
         email: 'mcoelho2011@hotmail.com',
         linkedin: 'https://www.linkedin.com/in/mcoelho222/',

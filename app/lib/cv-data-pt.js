@@ -1,134 +1,202 @@
+// Versão em português de cv-data.js (mesma estrutura).
+// Títulos de publicações são mantidos no idioma original.
 const cvData = {
+    labels: {
+        meta: {
+            title: "Marcelo Coelho — Currículo",
+            description: "Engenheiro Ambiental, PhD & Desenvolvedor Fullstack: ciência de dados, estatística e engenharia de software.",
+        },
+        sections: {
+            aboutMe: "Sobre mim",
+            education: "Formação",
+            skills: "Habilidades",
+            experience: "Experiência",
+            certifications: "Certificações",
+            languages: "Idiomas",
+            publications: "Publicações",
+        },
+        viewCertificate: "Ver certificado",
+        technologies: "Tecnologias",
+        proficiency: "proficiência",
+        outOf: "de",
+        switchLanguage: "Idioma",
+    },
     info: {
         email: 'mcoelho2011@hotmail.com',
-        linkedin: 'https://www.linkedin.com/in/mcoelho222',
+        linkedin: 'https://www.linkedin.com/in/mcoelho222/',
         github: 'https://github.com/MCoelho222',
         name: 'Marcelo Coelho',
-        job: 'Software Engineer for AI Training Data',
-        company: 'Scale AI',
-        titles: ['Environmental Engineer', 'Fullstack Developer', 'AI Specialist'],
+        job: 'Especialista Independente em Treinamento e Avaliação de IA',
+        company: 'Freelancer',
+        titles: ['Engenheiro Ambiental, PhD & Desenvolvedor Fullstack'],
     },
-    welcome: "Olá, seja muito bem-vindo ao meu perfil! 🚀 Aqui, você encontrará os marcos mais importantes da minha trajetória profissional. \
-    Sou uma pessoa determinada, focada e apaixonada por desafios, sempre buscando aprender e evoluir. \
-    Tenho um grande interesse por números, estatísticas e gráficos, e adoro colaborar com equipes motivadas. \
-    Minha mentalidade positiva me impulsiona a encarar qualquer obstáculo de frente. Além disso, trabalhar remotamente é algo que me motiva ainda mais! \
-    Atualmente, meu objetivo é atuar com modelos de IA, análise de dados e desenvolvimento web, unindo tecnologia e inovação para criar soluções impactantes. Vamos trocar ideias?",
-    aboutMe: 
-    "Sou desenvolvedor de software especializado em Python, JavaScript e TypeScript. Atualmente, trabalho em uma empresa internacional \
-    com treinamento de modelos baseados em IA para geração de códigos diversos na linguagem Python. Recentemente, concluí uma pós-graduação \
-    na qual pude me aprofundar neste incrível universo da inteligência artificial, utilizando bibliotecas como scikit-learn, TensorFlow, PyTorch\
-     e Pandas.\n\n Um grande diferencial em minhas habilidades como desenvolvedor é minha formação em engenharia ambiental, incluindo um doutorado \
-     focado em análise estatística de dados ambientais, utilizando Python. Essa base acadêmica me proporcionou sólidos conhecimentos estatísticos, \
-     matemáticos e de programação de computadores, assim como excelente raciocínio lógico e visão crítica dos problemas.\n\n Desde minha transição \
-     de carreira, em 2021, trabalhei em projetos diversificados na área de tecnologia, utilizando principalmente Python e Flask para o desenvolvimento \
-     de REST APIs, PostgreSQL/PostGIS para banco de dados, containers Docker em um sistema distribuído em microserviços, RabbitMQ para sistemas baseados \
-     em eventos, GeoServer para aplicações em mapas e JavaScript/TypeScript com React e Vue.js no desenvolvimento de interfaces do usuário.\n\n Adquiri \
-     experiência considerável com testes unitários e pipelines de CI/CD em ambientes Google Cloud e Microsoft Azure, assim como com metodologias ágeis como \
-     o Scrum. Graças à minha base em engenharia e análise estatística de dados, sempre pude contribuir com revisões refinadas de código quanto às regras \
-     matemáticas e ao raciocínio lógico, garantindo entregas de alta performance e sem erros.\n\n Outras habilidades e características pessoais: inglês \
-     avançado (leitura, escrita e fala), autogerenciável, organizado, colaborativo, comunicativo, detalhista e sempre em busca de aprimorar meus conhecimentos.",
-    hardSkills: [
-        "Python", "Machine Learning", "Deep Learinng", "Data Analysis", "Docker", "SQL", "NoSQL", "NLP", "React", "TypeScript" 
-    ],
-    softSkills:["Self managed", "collaborative", "communicative", "detail-oriented", "determined", "SCRUM"],
-    language: ["Portuguese (Brazil, native)", "English (proficient)"],
-    education:[
+    aboutMe:
+    "Engenheiro Ambiental e aspirante a Cientista de Dados Ambientais, com doutorado focado em análise de incertezas \
+em séries temporais de qualidade da água. Minha experiência em pesquisa inclui análise estatística, detecção de \
+variabilidade e tendências, estratégias de monitoramento e avaliação da representatividade de dados no monitoramento \
+ambiental. Também conheço os dados ambientais desde a origem: da graduação ao pós-doutorado, planejei as campanhas de \
+monitoramento, coletei amostras em todas as estações e realizei pessoalmente as análises químicas em laboratório, o que \
+me dá uma compreensão prática de como a amostragem e a medição influenciam a qualidade e a incerteza dos dados. \
+Tenho ampla experiência com Python para programação científica e análise de dados, complementada por experiência \
+profissional em engenharia de software, desenvolvimento backend e frontend, testes automatizados e treinamento e \
+avaliação de modelos de IA. Meu objetivo é aplicar métodos estatísticos e ciência de dados com Python a desafios \
+ambientais, desenvolvendo abordagens analíticas confiáveis para apoiar o monitoramento ambiental, a interpretação \
+de dados e a tomada de decisão baseada em evidências.",
+    skills: [
         {
-            period: "2023 - 2025",
-            institution: "Pontifical Catholic University of Minas Gerais (PUC Minas)",
-            linkname: "PUC Minas",
-            link: "https://www.pucminas.br/",
-            title: "Artificial Intelligence Specialist",
-            level: "Postgraduate",
-            description: "360 h with 15 modules: Programming for data science, Data visualization, \
-            General statistics, Modeling and data preparation for machine learning, Integration and processing \
-            for continuous data flow, Machine learning, Neural networks and deep learning, Information retrieval \
-            on the web and social networks, Algorithms and genetic programming, Image analysis and computer vision, \
-            DataOps and MLOps culture and practices, Recommendation systems, Statistical models, Special topics in machine \
-            learning, Natural language processing.",
-            tech: ["Python", "TensorFlow", "Pandas", "Numpy", "Scipy", "Scikit-learn",
-            "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
+            level: "Avançado",
+            items: ["Python", "Flask", "Docker", "Análise de Dados", "Estatística", "Avaliação e Curadoria de Dados de Treinamento de IA"],
         },
         {
-            period: "2022 - 2023",
-            institution: "Federal University of Paraná (UFPR)",
+            level: "Intermediário",
+            items: ["TypeScript", "FastAPI", "React", "Next.js", "Vue.js", "CI/CD", "Machine Learning", "Agentes de IA", "Dados Geoespaciais"],
+        },
+        {
+            level: "Ferramentas de IA",
+            items: ["Claude", "GitHub Copilot", "Codex"],
+        },
+        {
+            level: "Machine Learning",
+            items: ["PyTorch", "TensorFlow", "MLflow", "DagsHub"],
+        },
+        {
+            level: "Outros",
+            items: ["RabbitMQ"],
+        },
+    ],
+    languages: [
+        { language: "Português", code: "PT", level: "Nativo", proficiency: 5 },
+        { language: "Inglês", code: "EN", level: "Proficiência profissional avançada", proficiency: 4 },
+    ],
+    education: [
+        {
+            period: "2024 - 2025",
+            institution: "Pontifícia Universidade Católica de Minas Gerais",
+            linkname: "PUC Minas",
+            link: "https://www.pucminas.br/",
+            title: "Pós-graduação em Inteligência Artificial e Aprendizado de Máquina",
+            level: "Pós-graduação",
+            description: "Programa de 360 horas abrangendo machine learning, deep learning, PLN, visão computacional, modelagem estatística e MLOps."
+        },
+        {
+            period: "2021 - 2023",
+            institution: "Universidade Federal do Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Researcher",
-            level: "Post doctoral",
-            description:"Monitoring and analysis of water quality data under solar electric power plants installed \
-            in reservoirs caused by river dams.",
-            tech: ["Python", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Statistcs", "Mathematics"],
+            title: "Pós-doutorado em monitoramento da qualidade da água com sistemas fotovoltaicos flutuantes em reservatórios",
+            level: "Pós-doutorado",
+            description: "Análise estatística de dados de qualidade da água sob usinas solares flutuantes, com Python, para detectar tendências, sazonalidade e anomalias."
         },
         {
             period: "2015 - 2019",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Universidade Federal do Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "PhD.",
-            level: "Doctorate degree",
-            description:"Uncertainty analysis in the statistical and stochastic context of water quality time series.",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "Statistcs", "Mathematics", "QGIS"],
+            title: "Doutorado em análise de incertezas no uso de séries temporais de qualidade da água",
+            level: "Doutorado",
+            description: "Métodos para quantificar e reduzir incertezas em séries temporais de qualidade da água, com Python e simulação de Monte Carlo.",
         },
         {
             period: "2011 - 2013",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Universidade Federal do Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Master",
-            level: "Master's degree",
-            description:"Water quality monitoring strategy for the management of water resources in urban basins",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "Statistcs", "Mathematics", "QGIS"],
+            title: "Mestrado em estratégias de monitoramento da qualidade da água para a gestão de recursos hídricos em bacias urbanas",
+            level: "Mestrado",
+            description: "Planejamento e avaliação de estratégias de monitoramento da qualidade da água em bacias urbanas, com QGIS e Excel."
         },
         {
             period: "2004 - 2010",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Universidade Federal do Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Environmental engineer",
-            level: "Graduate",
-            description:"",
-            tech: ["Excel", "Statistcs", "Mathematics", "QGIS", "Mathematical modeling"],
+            title: "Graduação em Engenharia Ambiental",
+            level: "Graduação",
+            description: "Ciências ambientais, princípios de engenharia e práticas sustentáveis."
         },
     ],
     experience: [
         {
-            period: "2024 - Now",
-            company: "Scale AI",
-            title: "Software engineer for AI training data",
-            link: "https://scale.com/",
-            description: "Analyze and improve the responses of an AI-based model to generate codes for database analysis.",
-            tech: ["Python", "Pandas", "Numpy", "Scipy", "Matplotlib", "GenAI"],
+            period: "2024 - Atual",
+            title: "Especialista Independente em Treinamento e Avaliação de IA",
+            summary: "Prestador de serviços freelancer em diversas plataformas e projetos: Outlier (2024–atual, contribuições ocasionais), \
+Revelo (2025–atual), Alignerr (2026) e Fleet AI / Fleet Fellowship (2026).",
+            description: [
+                "Elaboração de prompts complexos e tarefas realistas de engenharia de software para avaliar agentes de IA em problemas de programação de nível de produção.",
+                "Análise, revisão e refatoração de código Python, TypeScript e JavaScript gerado por IA, avaliando correção, qualidade do código e aderência aos requisitos.",
+                "Uso do Claude Code e de contêineres Docker para gerar, executar e validar soluções em Python em ambientes controlados.",
+                "Avaliação de soluções geradas por IA e do desempenho de agentes, identificando erros e fornecendo feedback estruturado e acionável para melhorar a qualidade dos resultados.",
+                "Atuação como Squad Leader na Outlier, contribuindo para processos de revisão de código e melhoria de qualidade.",
+            ],
+            tech: ["Python", "TypeScript", "JavaScript", "Claude Code", "Docker"],
+        },
+        {
+            period: "2025 - 2026",
+            company: "Ecoledger",
+            title: "Desenvolvedor Full Stack",
+            summary: "Voluntário. Projeto de startup com o objetivo de se qualificar para uma competição da Y Combinator.",
+            description: [
+                "Desenvolvimento de uma plataforma de mercado de créditos de carbono.",
+                "Frameworks React (TypeScript) e FastAPI (Python).",
+                "Integração da aplicação Mundi.ai para aprimorar a visualização de dados geoespaciais.",
+                "Uso de PostGIS para dados georreferenciados.",
+            ],
+            tech: ["React", "TypeScript", "FastAPI", "Python", "PostGIS", "Mundi.ai"],
         },
         {
             period: "2023 - 2024",
             company: "Pix Force",
-            title: "Fullstack web developer",
-            link: "https://pixforce.ai/",
-            description: "Frontend and backend development with map-based application to monitor fire risk near to power lines.",
-            tech: ["Python", "Flask", "React", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
+            title: "Desenvolvedor Full Stack",
+            link: "https://pixforce.com/pt-br",
+            summary: "Funcionário em tempo integral. Empresa brasileira que desenvolve soluções baseadas em IA.",
+            description: [
+                "Planejamento e desenvolvimento de uma aplicação para monitoramento do risco de incêndios próximos a linhas de transmissão de energia.",
+                "Desenvolvimento frontend com React e TypeScript.",
+                "Desenvolvimento de microsserviços em Python e Flask em ambiente Azure.",
+                "PostgreSQL com PostGIS para gerenciamento de dados geoespaciais.",
+                "Uso de RabbitMQ (semelhante ao Kafka) para comunicação eficiente entre serviços.",
+                "Pipelines de CI/CD e testes automatizados.",
+                "Uso de SCRUM como metodologia de desenvolvimento.",
+            ],
+            tech: ["Python", "Flask", "React", "TypeScript", "Microsoft Azure", "PostgreSQL", "PostGIS", "RabbitMQ", "CI/CD", "Scrum"],
         },
         {
             period: "2022 - 2023",
             company: "Conecta Nuvem",
-            title: "Fullstack web developer",
-            link: "https://conectanuvem.com/",
-            description: "Frontend and backend development in google cloud environment.",
-            tech: ["Python", "Flask", "Vue.js", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
+            title: "Desenvolvedor Full Stack",
+            link: "https://conectanuvem.com.br/",
+            description: [
+                "Manutenção de aplicações backend e frontend de controle de acesso integradas ao Google Workspace, implantadas no GCP.",
+                "Uso de SCRUM como metodologia de desenvolvimento.",
+            ],
+            tech: ["Google Workspace", "GCP", "Scrum"],
         },
         {
             period: "2013 - 2021",
-            company: "UFPR and UniEnsino",
-            title: "Professor",
-            link: "https://ambiental.ufpr.br/graduacao/",
-            description: "Professor in higher education of environmental engineering.",
+            title: "Professor de Engenharia Ambiental",
+            summary: "Docência nos cursos de Engenharia Civil e Engenharia Ambiental da UFPR e da UniEnsino.",
+            description: [],
             tech: [],
         },
     ],
     certificates: [
         {
+            year: "2026",
+            title: "AI Agents and Agentic AI with Python & Generative AI",
+            load: "",
+            institution: "Coursera",
+            link: "https://coursera.org/share/a939027f7822d07a446e95a5b6b8230c",
+        },
+        {
+            year: "2025",
+            title: "Inteligência Artificial e Aprendizado de Máquina",
+            load: "360 h",
+            institution: "PUC Minas",
+            link: "https://drive.google.com/file/d/1O9PCfPWNZECLgrp5Gjgr8exK1pPeHrZv/view?usp=sharing",
+        },
+        {
             year: "2024",
-            title: "Complexity Calculation",
+            title: "Complexity Analysis",
             load: "8 h",
             institution: "Programiz",
             link: "https://programiz.pro/certificates/detail/66F5134CB0D4",
@@ -149,10 +217,62 @@ const cvData = {
         },
         {
             year: "2022",
-            title: "Fullstack developer",
+            title: "Desenvolvedor Full Stack - VueJS e Flask",
             load: "900 h",
             institution: "LAB365 SESI/SENAI-SC",
-            link: "https://programiz.pro/certificates/detail/722D3582CA0F",
+            link: "https://sgn.sesisenai.org.br/arquivos/certificacao/02/77/32/02773294147e9ead7cbf21acd50d4ea7/pfx5715434975941193567sfx.pdf",
+        },
+        {
+            year: "2022",
+            title: "Scrum Foundation Professional Certification - SFPC™",
+            load: "",
+            institution: "CertiProf",
+            link: "https://www.credly.com/badges/6664235f-824f-4919-9be0-68d54cc222db",
+        },
+    ],
+    // Títulos das publicações mantidos no idioma original
+    publications: [
+        {
+            authors: "Almeida, C. de C.; Kissula, J. C. J.; Carvalho, J. M.; Ferreira, D. M.; Coelho, M.; Detzel, D. H. M.; Fernandes, C. V. S.",
+            title: "A socio-hydrology approach to domestic organic pollutant load removal: duration curve analysis for enhancing water quality management",
+            venue: "RBRH – Revista Brasileira de Recursos Hídricos, v.30",
+            year: "2025",
+            link: "https://doi.org/10.1590/2318-0331.302520250091",
+        },
+        {
+            authors: "Rigotti, J. A.; Coelho, M.; Bleninger, T. B.; Fernandes, C. V. S.; Mannich, M.; Knapik, H. G.; Zanona, V. R. C. M.; Goulart, C. B.; Souza, D. C.; Prandini, M. K.",
+            title: "FotoÁgua: efeitos de sistemas fotovoltaicos flutuantes sobre processos de transferência na interface ar-água e alterações para qualidade de água",
+            venue: "Capítulo de livro em Inovação Colaborativa: Conectando Universidades e Empresas para o Futuro Sustentável (CRV), p. 419–460",
+            year: "2025",
+            link: "https://drive.google.com/file/d/1t1YCCglWupKZq6RySZnXp7V3Nw0dSm3h/view",
+        },
+        {
+            authors: "Ferreira, D. M.; Coelho, M.; Fernandes, C. V. S.; Kaviski, E.; Detzel, D. H. M.",
+            title: "Deterministic and Stochastic Principles to Convert Discrete Water Quality Data into Continuous Time Series",
+            venue: "Water Resources Management, v.35",
+            year: "2021",
+            link: "https://link.springer.com/article/10.1007/s11269-021-02908-1",
+        },
+        {
+            authors: "Coelho, M.; Fernandes, C. V. S.; Detzel, D. H. M.",
+            title: "Uncertainty analysis in the detection of trends, cycles, and shifts in water resources time series",
+            venue: "Water Resources Management, v.27, p.1–16",
+            year: "2019",
+            link: "https://link.springer.com/article/10.1007/s11269-019-02210-1",
+        },
+        {
+            authors: "Coelho, M.; Fernandes, C. V. S.; Detzel, D. H. M.; Mannich, M.",
+            title: "Statistical validity of water quality time series in urban watersheds",
+            venue: "RBRH – Revista Brasileira de Recursos Hídricos, v.22, e51",
+            year: "2017",
+            link: "https://www.scielo.br/j/rbrh/a/KyMFpKdRKYHvzh8pjQhvGCM/?lang=en",
+        },
+        {
+            authors: "Coelho, M.; Kishi, R. T.",
+            title: "Caracterização de Cargas Orgânicas nos Rios Barigui, Belém e Atuba na Bacia Hidrográfica do Alto Iguaçu",
+            venue: "XIX Simpósio Brasileiro de Recursos Hídricos",
+            year: "2011",
+            link: "https://files.abrhidro.org.br/Sumarios/81/3c9fafa856f87bb83b0cd075e962f6dc_4d50bce5e8ea3001ccb58893fe364e82.pdf",
         },
     ],
 }

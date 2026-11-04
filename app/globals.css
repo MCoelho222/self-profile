@@ -539,3 +539,40 @@
   @apply mt-1 text-sm sm:text-[15px] italic text-slate-400;
 }
 
+
+/* ---------- Language switch (EN | PT) ---------- */
+.lang-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.lang-switch-opt {
+  @apply font-mono text-xs font-semibold tracking-wider text-slate-400;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.lang-switch-opt:hover {
+  @apply text-slate-200;
+}
+
+.lang-switch-active {
+  color: #1e1b16;
+  background: #eec895;
+  box-shadow: 0 0 12px -3px rgba(238, 200, 149, 0.6);
+}
+
+.lang-switch-active:hover {
+  color: #1e1b16;
+}

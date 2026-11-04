@@ -24,6 +24,7 @@ export interface AboutMeType {
 export interface ExperienceType {
     title?: string;
     content: IExperience[];
+    techLabel?: string;
 }
 
 export interface IExperience {
@@ -56,6 +57,7 @@ export interface IEducation {
 export interface CertificatesType {
     title: string;
     content: ICertificates[];
+    viewLabel?: string;
 }
 
 export interface ICertificates {
@@ -70,6 +72,7 @@ export interface ICertificates {
 export interface SkillsType {
     title?: string;
     content: string[];
+    label?: string;
 }
 
 // Skills table
@@ -94,6 +97,8 @@ export interface ILanguage {
 export interface LanguagesType {
     title?: string;
     content: ILanguage[];
+    proficiencyLabel?: string;
+    outOfLabel?: string;
 }
 
 // Publications
@@ -108,4 +113,23 @@ export interface IPublication {
 export interface PublicationsType {
     title?: string;
     content: IPublication[];
+}
+
+// UI labels (per locale)
+export interface ILabels {
+    meta: { title: string; description: string };
+    sections: {
+        aboutMe: string;
+        education: string;
+        skills: string;
+        experience: string;
+        certifications: string;
+        languages: string;
+        publications: string;
+    };
+    viewCertificate: string;
+    technologies: string;
+    proficiency: string;
+    outOf: string;
+    switchLanguage: string;
 }
