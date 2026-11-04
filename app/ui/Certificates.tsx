@@ -1,30 +1,43 @@
-import React from 'react';
-import { CertificatesType } from '../lib/definitions';
+import React from "react";
+import { LuArrowUpRight } from "react-icons/lu";
+import { CertificatesType } from "../lib/definitions";
 
 const Certificates = ({ title, content }: CertificatesType) => {
-    return (
-        <div className="mb-10 sm:mb-16">
-            <p className="title">{title}</p>
-            {content.map((item) => {
-                return (
-                <div className="flex flex-row w-full justify-start" key={item.title}>
-                    <div className=" description w-1/6">
-                        <p>{item.year}</p>
-                    </div>
-                    <div className="w-5/6 flex flex-row gap-2 justify-start">
-                        <p className="description">{item.title} <span className="description">by {item.institution}</span> - <a
-                            className="blue-link"
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                Certificate
-                        </a></p>
-                    </div>
-                </div>
-                );
-            })}
-        </div>
-    );
-}
+  return (
+    <section className="mb-10 sm:mb-16">
+      <p className="title">{title}</p>
+      <div className="exp-timeline">
+        {content.map((item) => (
+          <article className="exp-item cert-item" key={item.title}>
+            <header className="flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
+              <h3 className="cert-title">{item.title}</h3>
+              <span className="exp-period">{item.year}</span>
+            </header>
+
+            <p className="cert-meta">
+              <span>{item.institution}</span>
+              {item.load && (
+                <>
+                  <span className="cert-sep">·</span>
+                  <span>{item.load}</span>
+                </>
+              )}
+              <span className="cert-sep">·</span>
+              <a
+                className="accent-link inline-flex items-center gap-0.5"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View certificate
+                <LuArrowUpRight aria-hidden="true" />
+              </a>
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Certificates;
