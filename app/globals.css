@@ -8,11 +8,11 @@
 }
 
 .accent-link {
-  @apply text-emerald-300/90 underline decoration-emerald-400/30 underline-offset-4 transition-colors duration-200;
+  @apply text-indigo-200/90 underline decoration-indigo-300/30 underline-offset-4 transition-colors duration-200;
 }
 
 .accent-link:hover {
-  @apply text-emerald-200 decoration-emerald-300/70;
+  @apply text-indigo-100 decoration-indigo-200/70;
 }
 
 /* Description */
@@ -43,7 +43,7 @@
 
 /* Skills */
 .skills {
-  @apply text-emerald-500 font-mono text-[15px];
+  @apply text-slate-300 font-mono text-[15px];
 }
 
 /* Small screen sizes */
@@ -132,8 +132,8 @@
   right: -30vmax;
   background: radial-gradient(
     circle at center,
-    rgba(4, 120, 87, 0.32) 0%,
-    rgba(17, 94, 89, 0.16) 35%,
+    rgba(4, 120, 87, 0.18) 0%,
+    rgba(17, 94, 89, 0.09) 35%,
     rgba(17, 24, 39, 0) 70%
   );
   animation: live-bg-breathe 14s ease-in-out infinite;
@@ -147,7 +147,7 @@
   right: 12vmax;
   background: radial-gradient(
     circle at center,
-    rgba(14, 116, 144, 0.12) 0%,
+    rgba(14, 116, 144, 0.065) 0%,
     rgba(17, 24, 39, 0) 70%
   );
   animation: live-bg-drift 22s ease-in-out infinite;
@@ -286,7 +286,7 @@
 }
 
 .info-name {
-  background: linear-gradient(90deg, #e2e8f0 0%, #a7f3d0 100%);
+  background: linear-gradient(90deg, #e2e8f0 0%, #c7d2fe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -337,7 +337,7 @@
 }
 
 .info-contact:hover .info-contact-text {
-  color: rgb(167, 243, 208);
+  color: rgb(199, 210, 254);
 }
 
 .info-social {
@@ -360,22 +360,176 @@
   transform: translateY(-2px);
 }
 
-/* ---------- Period / date column ---------- */
-.period {
-  @apply shrink-0 w-24 sm:w-32 font-mono text-xs sm:text-sm text-slate-500 whitespace-nowrap;
+/* ---------- Experience timeline ---------- */
+.exp-timeline {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+/* Vertical line fading out at the bottom */
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0.6rem;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(52, 211, 153, 0.5),
+    rgba(148, 163, 184, 0.15) 70%,
+    transparent
+  );
+}
+
+.exp-item {
+  position: relative;
+  padding-bottom: 2.75rem;
+}
+
+.exp-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline node */
+.exp-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.75rem + 1px);
+  top: 0.55rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: rgb(17, 24, 39);
+  border: 2px solid rgba(52, 211, 153, 0.8);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.45);
+}
+
+.exp-period {
+  @apply shrink-0 font-mono text-xs sm:text-sm text-slate-300/90 whitespace-nowrap;
   font-variant-numeric: tabular-nums;
-  /* Align with the first line of the 20px (28px line-height) title */
-  line-height: 1.75rem;
+  padding: 0.2rem 0.6rem;
+  margin-top: 0.15rem;
+  border-radius: 9999px;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.18);
 }
 
-/* Rows whose first line is body text (17px, relaxed leading) */
-.period-inline {
-  line-height: 1.7rem;
+.exp-company {
+  @apply text-base text-slate-400 font-medium mt-1;
 }
 
-@media (max-width: 639px) {
-  /* Mobile titles are 16px / 24px line-height */
-  .period {
-    line-height: 1.5rem;
-  }
+.exp-summary {
+  @apply text-[15px] sm:text-base text-slate-500 italic leading-relaxed mt-2;
+}
+
+.exp-bullets {
+  @apply mt-3 space-y-2;
+}
+
+.exp-bullets li {
+  @apply relative pl-5 text-slate-400 text-base sm:text-[17px] leading-relaxed;
+}
+
+.exp-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.7em;
+  width: 6px;
+  height: 1.5px;
+  border-radius: 1px;
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Tech stack chips */
+.tech-chip {
+  @apply font-mono text-xs sm:text-[13px] text-slate-300/90;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.4rem;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+/* Education: shorter entries, plain description paragraph */
+.exp-item-compact {
+  padding-bottom: 2rem;
+}
+
+.exp-description {
+  @apply mt-2 text-slate-400 text-base sm:text-[17px] leading-relaxed;
+}
+
+/* Certifications: compact timeline entries */
+.cert-item {
+  padding-bottom: 1.5rem;
+}
+
+.cert-title {
+  @apply text-base sm:text-lg font-medium text-slate-300/80;
+}
+
+.cert-item::before {
+  top: 0.45rem;
+}
+
+.cert-meta {
+  @apply mt-1 flex flex-wrap items-center gap-x-2 text-sm sm:text-[15px] text-slate-500;
+}
+
+.cert-sep {
+  @apply text-slate-600;
+}
+
+/* ---------- Languages ---------- */
+.lang-card {
+  position: relative;
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(160deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.4));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.lang-card:hover {
+  border-color: rgba(165, 180, 252, 0.3);
+  transform: translateY(-2px);
+}
+
+.lang-code {
+  @apply font-mono text-sm font-semibold text-indigo-200/90;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(165, 180, 252, 0.2);
+  letter-spacing: 0.05em;
+}
+
+.lang-name {
+  @apply text-base sm:text-lg font-medium text-slate-300/90 leading-tight;
+}
+
+.lang-level {
+  @apply text-sm text-slate-500 mt-0.5;
+}
+
+.lang-meter {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.9rem;
+}
+
+.lang-seg {
+  flex: 1;
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.lang-seg-on {
+  background: linear-gradient(90deg, rgba(165, 180, 252, 0.75), rgba(129, 140, 248, 0.55));
 }

@@ -86,7 +86,9 @@ export interface SkillsTableType {
 // Languages
 export interface ILanguage {
     language: string;
+    code: string;
     level: string;
+    proficiency: number; // 1–5
 }
 
 export interface LanguagesType {

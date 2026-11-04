@@ -44,8 +44,8 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
         },
     ],
     languages: [
-        { language: "Portuguese", level: "Native" },
-        { language: "English", level: "Advanced professional proficiency" },
+        { language: "Portuguese", code: "PT", level: "Native", proficiency: 5 },
+        { language: "English", code: "EN", level: "Advanced professional proficiency", proficiency: 4 },
     ],
     education: [
         {
@@ -55,7 +55,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://www.pucminas.br/",
             title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
             level: "Postgraduate",
-            description: "PUC Minas (360 h). Machine learning, deep learning, NLP, computer vision, statistical modeling, and MLOps."
+            description: "360-hour program covering machine learning, deep learning, NLP, computer vision, statistical modeling, and MLOps."
         },
         {
             period: "2021 - 2023",
@@ -64,7 +64,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://ufpr.br/",
             title: "Postdoctoral Research in water quality monitoring using floating photovoltaic systems in reservoirs",
             level: "Postdoctoral",
-            description: "UFPR. Statistical analysis of water quality data under floating solar plants using Python to detect trends, seasonality, and anomalies."
+            description: "Statistical analysis of water quality data under floating solar plants using Python to detect trends, seasonality, and anomalies."
         },
         {
             period: "2015 - 2019",
@@ -73,7 +73,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://ufpr.br/",
             title: "PhD in uncertainty analysis in the use of water quality time series",
             level: "Doctorate degree",
-            description: "UFPR. Methods to quantify and reduce uncertainty in water quality time series, using Python and Monte Carlo simulation.",
+            description: "Methods to quantify and reduce uncertainty in water quality time series, using Python and Monte Carlo simulation.",
         },
         {
             period: "2011 - 2013",
@@ -82,7 +82,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://ufpr.br/",
             title: "Master's Degree in water quality monitoring strategies for water resources management in urban watersheds",
             level: "Master's degree",
-            description: "UFPR. Design and assessment of water quality monitoring strategies for urban basins, using QGIS and Excel."
+            description: "Design and assessment of water quality monitoring strategies for urban basins, using QGIS and Excel."
         },
         {
             period: "2004 - 2010",
@@ -91,7 +91,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://ufpr.br/",
             title: "Bachelor's Degree in Environmental Engineering",
             level: "Graduate",
-            description: "UFPR. Environmental sciences, engineering principles, and sustainable practices."
+            description: "Environmental sciences, engineering principles, and sustainable practices."
         },
     ],
     experience: [
@@ -182,7 +182,7 @@ Revelo (2025–Present), Alignerr (2026), and Fleet AI / Fleet Fellowship (2026)
         },
         {
             year: "2024",
-            title: "Data Analysis with Python (300 h)",
+            title: "Data Analysis with Python",
             load: "300 h",
             institution: "FreeCodeCamp",
             link: "https://www.freecodecamp.org/certification/mcoelho222/data-analysis-with-python-v7",
@@ -196,7 +196,7 @@ Revelo (2025–Present), Alignerr (2026), and Fleet AI / Fleet Fellowship (2026)
         },
         {
             year: "2022",
-            title: "Full Stack Developer - VueJS and Flask (900 h)",
+            title: "Full Stack Developer - VueJS and Flask",
             load: "900 h",
             institution: "LAB365 SESI/SENAI-SC",
             link: "https://sgn.sesisenai.org.br/arquivos/certificacao/02/77/32/02773294147e9ead7cbf21acd50d4ea7/pfx5715434975941193567sfx.pdf",

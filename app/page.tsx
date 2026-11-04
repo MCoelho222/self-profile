@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <Info content={cvData.info} />
       </div>
-      <div className="w-full pt-4 sm:pt-16 sm:w-[55%] sm:ml-24 lg:ml-40">
+      <div className="w-full pt-4 sm:pt-16 sm:w-[55%] sm:ml-20 lg:ml-32">
         <AboutMe title="About me" content={cvData.aboutMe} />
         <Education title="Education" content={cvData.education} />
         <SkillsTable title="Skills" content={cvData.skills} />

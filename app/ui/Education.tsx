@@ -3,22 +3,30 @@ import { EducationType } from "../lib/definitions";
 
 const Education = ({ title, content }: EducationType) => {
   return (
-    <div className="mb-10 sm:mb-16">
+    <section className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
-      {content.map((item) => {
-        return (
-          <div className="flex flex-row w-full gap-4 mb-4" key={item.title}>
-            <div className="period">
-              <p>{item.period}</p>
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="subtitle mb-1">{item.title}</p>
-              <p className="description">{item.description}</p>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+      <div className="exp-timeline">
+        {content.map((item) => (
+          <article className="exp-item exp-item-compact" key={item.title}>
+            <header className="flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
+              <h3 className="subtitle">{item.title}</h3>
+              <span className="exp-period">{item.period}</span>
+            </header>
+
+            <p className="exp-company">
+              <a className="accent-link" href={item.link} target="_blank" rel="noopener noreferrer">
+                {item.institution}
+              </a>
+              {item.linkname && item.linkname !== item.institution && (
+                <span className="text-slate-500"> ({item.linkname})</span>
+              )}
+            </p>
+
+            {item.description && <p className="exp-description">{item.description}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
   );
 };
 
