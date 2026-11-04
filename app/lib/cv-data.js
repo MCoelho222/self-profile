@@ -1,153 +1,196 @@
+// Source of truth: englishcv.pdf (last updated October 27, 2026)
 const cvData = {
     info: {
         email: 'mcoelho2011@hotmail.com',
-        linkedin: 'https://www.linkedin.com/in/mcoelho222',
+        linkedin: 'https://www.linkedin.com/in/mcoelho222/',
         github: 'https://github.com/MCoelho222',
         name: 'Marcelo Coelho',
-        job: 'Software Engineer for AI Training Data',
-        company: 'Scale AI',
-        titles: ['Environmental Engineer, DSc.', 'Fullstack Developer', 'AI Specialist'],
+        job: 'Independent AI Training & Evaluation Specialist',
+        company: 'Freelance',
+        titles: ['Environmental Data Scientist', 'Python', 'Statistical Analysis & Time Series'],
     },
-    welcome: "Enjoy the ride — and if it resonates with you, let’s connect and share ideas!",
-    aboutMe: 
-    "Brazilian software developer with strong expertise in Python, JavaScript, and TypeScript.\
-     I combine a solid background in environmental engineering (PhD) and AI (postgrad) with experience in developing REST APIs (Flask),\
-      working with PostgreSQL/PostGIS, Docker, RabbitMQ, and cloud environments (GCP, Azure). I’ve contributed to microservices, mapping \
-      platforms, and data-heavy applications, always focusing on clean, efficient, and logically sound code. \
-      Skilled in AI tools like scikit-learn, TensorFlow, and PyTorch, and familiar with frontend frameworks like React and Vue. \
-      Strong in English, self-driven, collaborative, and detail-oriented.",
-    hardSkills: [
-        "Python", "Machine Learning", "Deep Learning", "Data Analysis", "Docker", "SQL", "NoSQL", "NLP", "React", "TypeScript" 
-    ],
-    softSkills:["Self managed", "collaborative", "communicative", "detail-oriented", "determined", "SCRUM"],
-    language: ["Portuguese (Brazil, native)", "English (proficient)"],
-    education:[
+    aboutMe:
+    "Environmental Engineer and aspiring Environmental Data Scientist with a PhD focused on uncertainty \
+analysis in water quality time series. My research experience includes statistical analysis, variability \
+and trend detection, monitoring strategies, and the assessment of data representativeness in environmental \
+monitoring. I have extensive experience using Python for scientific programming and data analysis, \
+complemented by professional experience in software engineering, backend and frontend development, \
+automated testing, and AI model training and evaluation. My goal is to apply statistical methods and \
+Python-based data science to environmental challenges, developing reliable analytical approaches to support \
+environmental monitoring, data interpretation, and evidence-based decision-making.",
+    skills: [
         {
-            period: "2023 - 2025",
+            level: "Advanced",
+            items: ["Python", "Flask", "Docker", "Data Analysis", "Statistics", "AI Training Data Evaluation and Curation"],
+        },
+        {
+            level: "Intermediate",
+            items: ["TypeScript", "FastAPI", "React", "Next.js", "Vue.js", "CI/CD", "Machine Learning", "AI Agents", "Geospatial Data"],
+        },
+        {
+            level: "AI Tools",
+            items: ["Claude", "GitHub Copilot", "Codex"],
+        },
+        {
+            level: "Machine Learning",
+            items: ["PyTorch", "TensorFlow", "MLflow", "DagsHub"],
+        },
+        {
+            level: "Other",
+            items: ["RabbitMQ"],
+        },
+    ],
+    languages: [
+        { language: "Portuguese", level: "Native" },
+        { language: "English", level: "Advanced professional proficiency" },
+    ],
+    education: [
+        {
+            period: "2024 - 2025",
             institution: "Pontifical Catholic University of Minas Gerais",
             linkname: "PUC Minas",
             link: "https://www.pucminas.br/",
             title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
             level: "Postgraduate",
             description: "The course load was 360 hours, covering topics such as programming for data science, data visualization, \
-            deneral statistics, modeling and data preparation for machine learning, integration and processing \
-            for continuous data flow, machine learning, neural networks and deep learning, information retrieval \
-            on the web and social networks, algorithms and genetic programming, image analysis and computer vision, \
-            dataOps and MLOps culture and practices, recommendation systems, statistical models, special topics in machine \
-            learning, natural language processing, humanities."
+general statistics, modeling and data preparation for machine learning, integration and processing \
+for continuous data flow, machine learning, neural networks and deep learning, information retrieval \
+on the web and social networks, algorithms and genetic programming, image analysis and computer vision, \
+dataOps and MLOps culture and practices, recommendation systems, statistical models, special topics in machine \
+learning, natural language processing, humanities."
         },
         {
-            period: "2022 - 2023",
+            period: "2021 - 2023",
             institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Post doctoral Researcher",
-            level: "Post doctoral",
-            description:"Monitoring and analysis of water quality data under floating solar power plants installed \
-            in reservoirs caused by river dams. The analysis were performed using Python, Pandas, Numpy, Matplotlib, Seaborn, \
-            and statistical methods to identify trends, seasonal patterns, and anomalies in the data."
+            title: "Postdoctoral Research in water quality monitoring using floating photovoltaic systems in reservoirs",
+            level: "Postdoctoral",
+            description: "Monitoring and analysis of water quality data under floating solar power plants installed \
+in reservoirs caused by river dams. The analysis were performed using Python, Pandas, Numpy, Matplotlib, Seaborn, \
+and statistical methods to identify trends, seasonal patterns, and anomalies in the data."
         },
         {
             period: "2015 - 2019",
             institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Environmental Engineer, DSc.",
+            title: "PhD in uncertainty analysis in the use of water quality time series",
             level: "Doctorate degree",
-            description:"A research about uncertainty analysis in the statistical and stochastic context of water quality time series. The goal was to \
-            develop and apply methods to quantify and reduce uncertainties in water quality data, improving the reliability of data-driven \
-            decisions in water resource management. The research was performed using Python, Pandas, Numpy, Scipy, Matplotlib, and statistical \
-            techniques such as Monte Carlo simulations, Bayesian inference, and time series analysis.",
+            description: "A research about uncertainty analysis in the statistical and stochastic context of water quality time series. The goal was to \
+develop and apply methods to quantify and reduce uncertainties in water quality data, improving the reliability of data-driven \
+decisions in water resource management. The research was performed using Python, Pandas, Numpy, Scipy, Matplotlib, and statistical \
+techniques such as Monte Carlo simulations, Bayesian inference, and time series analysis.",
         },
         {
             period: "2011 - 2013",
-            institution: "Federal University of Paraná (UFPR)",
+            institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Master's degree",
+            title: "Master's Degree in water quality monitoring strategies for water resources management in urban watersheds",
             level: "Master's degree",
-            description:"A research about water quality monitoring strategy for the management of water resources in urban basins. \
-            The research focused on developing and applying methods for effective monitoring and assessment of water quality in urban environments. The tools used includes QGIS and Excel."
+            description: "A research about water quality monitoring strategy for the management of water resources in urban basins. \
+The research focused on developing and applying methods for effective monitoring and assessment of water quality in urban environments. The tools used includes QGIS and Excel."
         },
         {
             period: "2004 - 2010",
             institution: "Federal University of Paraná",
             linkname: "UFPR",
             link: "https://ufpr.br/",
-            title: "Environmental Engineer",
+            title: "Bachelor's Degree in Environmental Engineering",
             level: "Graduate",
-            description:"Environmental sciences, engineering principles, and sustainable practices."
+            description: "Environmental sciences, engineering principles, and sustainable practices."
         },
     ],
     experience: [
         {
-            period: "2024 - Now",
-            company: "Scale AI",
-            title: "Software Engineer for AI Training Data",
-            link: "https://scale.com/",
+            period: "2024 - Present",
+            title: "Independent AI Training & Evaluation Specialist",
+            summary: "Freelance contractor across multiple platforms and projects: Outlier (2024–Present, occasional contributions), \
+Revelo (2025–Present), Alignerr (2026), and Fleet AI / Fleet Fellowship (2026).",
             description: [
-                "Reviewed and refactored backend code generated by LLMs.",
-                "Acted as Squad Leader, coordinating distributed team efforts and ensuring code quality.",
-                "Gained hands-on experience with distributed systems, algorithm design, and backend service evaluation."
+                "Design complex prompts and realistic software engineering tasks to evaluate AI agents on production-level coding problems.",
+                "Analyze, review, and refactor AI-generated Python, TypeScript, and JavaScript code, assessing correctness, code quality, and adherence to requirements.",
+                "Use Claude Code and Docker containers to generate, execute, and validate Python solutions in controlled environments.",
+                "Evaluate AI-generated solutions and agent performance, identifying errors and providing structured, actionable feedback to improve output quality.",
+                "Served as a Squad Leader at Outlier, contributing to code review processes and quality improvement.",
             ],
-            tech: ["Python", "Python", "TypeScript", "JavaScript", "Java", "C++", "C#", "GenAI"],
+            tech: ["Python", "TypeScript", "JavaScript", "Claude Code", "Docker"],
+        },
+        {
+            period: "2025 - 2026",
+            company: "Ecoledger",
+            title: "Full Stack Developer",
+            summary: "Volunteer. Startup project aiming to qualify for a Y Combinator competition.",
+            description: [
+                "Development of a carbon credit market platform.",
+                "React (TypeScript) and FastAPI (Python) frameworks.",
+                "Integration of the Mundi.ai application to improve geospatial data visualization.",
+                "Use of PostGIS for georeferenced data.",
+            ],
+            tech: ["React", "TypeScript", "FastAPI", "Python", "PostGIS", "Mundi.ai"],
         },
         {
             period: "2023 - 2024",
             company: "Pix Force",
-            title: "Fullstack web developer",
-            link: "https://pixforce.ai/",
+            title: "Full Stack Developer",
+            link: "https://pixforce.com/pt-br",
+            summary: "Full-time employee. Brazilian company developing AI-based solutions.",
             description: [
-                "Designed and developed a map-based application for fire risk detection near power lines, with geofencing features.",
-                "Built microservices in Python (Flask) deployed on Azure, handling real-time georeferenced data.",
-                "Used PostgreSQL with PostGIS to manage and query geospatial data.",
-                "Implemented event-driven architecture using RabbitMQ (Kafka-like) for inter-service communication.",
-                "Worked with CI/CD pipelines, automated testing, and cloud-native deployments."
+                "Planning and development of an application for monitoring wildfire risk near power transmission lines.",
+                "Frontend development using React and TypeScript.",
+                "Development of Python and Flask microservices in an Azure environment.",
+                "PostgreSQL with PostGIS for managing geospatial datasets.",
+                "Use of RabbitMQ (similar to Kafka) for efficient communication between services.",
+                "CI/CD pipelines and automated testing.",
+                "Use of SCRUM as the development methodology.",
             ],
-            tech: ["Python", "Flask", "React", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
+            tech: ["Python", "Flask", "React", "TypeScript", "Microsoft Azure", "PostgreSQL", "PostGIS", "RabbitMQ", "CI/CD", "Scrum"],
         },
         {
             period: "2022 - 2023",
             company: "Conecta Nuvem",
-            title: "Fullstack web developer",
-            link: "https://conectanuvem.com/",
+            title: "Full Stack Developer",
+            link: "https://conectanuvem.com.br/",
             description: [
-                "Developed backend services for access control integrated with Google Workspace, deployed on GCP.",
-                "Built APIs in Python (Flask) and frontends with Vue.js in a microservices architecture.",
-                "Strengthened backend development, cloud deployment, and distributed collaboration skills."
+                "Maintenance of backend and frontend applications for access control integrated with Google Workspace, deployed on GCP.",
+                "Use of SCRUM as the development methodology.",
             ],
-            tech: ["Python", "Flask", "Vue.js", "TypeScript", "Geoserver", "Microsoft Azure", "Scrum"],
+            tech: ["Google Workspace", "GCP", "Scrum"],
         },
         {
             period: "2013 - 2021",
-            company: "Federal University of Paraná and UniEnsino",
-            title: "Professor",
-            link: "https://ambiental.ufpr.br/graduacao/",
-            description: [
-                "Taught courses and conducted research in GIS and spatial analysis.",
-                "Built foundational expertise in geospatial systems, enabling effective work in geofencing and real-world mapping."
-            ],
-            tech: ["QGIS", "Excel"],
+            title: "Environmental Engineering Professor",
+            summary: "Teaching in Civil and Environmental Engineering programs at UFPR and UniEnsino.",
+            description: [],
+            tech: [],
         },
     ],
     certificates: [
         {
+            year: "2026",
+            title: "AI Agents and Agentic AI with Python & Generative AI",
+            load: "",
+            institution: "Coursera",
+            link: "https://coursera.org/share/a939027f7822d07a446e95a5b6b8230c",
+        },
+        {
             year: "2025",
-            title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
+            title: "Artificial Intelligence and Machine Learning",
             load: "360 h",
             institution: "PUC Minas",
             link: "https://drive.google.com/file/d/1O9PCfPWNZECLgrp5Gjgr8exK1pPeHrZv/view?usp=sharing",
         },
         {
             year: "2024",
-            title: "Complexity Calculation",
+            title: "Complexity Analysis",
             load: "8 h",
             institution: "Programiz",
             link: "https://programiz.pro/certificates/detail/66F5134CB0D4",
         },
         {
             year: "2024",
-            title: "Data Analysis with Python",
+            title: "Data Analysis with Python (300 h)",
             load: "300 h",
             institution: "FreeCodeCamp",
             link: "https://www.freecodecamp.org/certification/mcoelho222/data-analysis-with-python-v7",
@@ -161,10 +204,55 @@ const cvData = {
         },
         {
             year: "2022",
-            title: "Fullstack developer",
+            title: "Full Stack Developer - VueJS and Flask (900 h)",
             load: "900 h",
             institution: "LAB365 SESI/SENAI-SC",
-            link: "https://programiz.pro/certificates/detail/722D3582CA0F",
+            link: "https://sgn.sesisenai.org.br/arquivos/certificacao/02/77/32/02773294147e9ead7cbf21acd50d4ea7/pfx5715434975941193567sfx.pdf",
+        },
+        {
+            year: "2022",
+            title: "Scrum Foundation Professional Certification - SFPC™",
+            load: "",
+            institution: "CertiProf",
+            link: "https://www.credly.com/badges/6664235f-824f-4919-9be0-68d54cc222db",
+        },
+    ],
+    publications: [
+        {
+            authors: "Almeida, C. de C.; Kissula, J. C. J.; Carvalho, J. M.; Ferreira, D. M.; Coelho, M.; Detzel, D. H. M.; Fernandes, C. V. S.",
+            title: "A socio-hydrology approach to domestic organic pollutant load removal: duration curve analysis for enhancing water quality management",
+            venue: "Scientific/Technical Article, RBRH 30, 2025.",
+            link: "https://doi.org/10.1590/2318-0331.302520250091",
+        },
+        {
+            authors: "Rigotti, J. A.; Coelho, M.; Bleninger, T. B.; Fernandes, C. V. S.; Mannich, M.; Knapik, H. G.; Zanona, V. R. C. M.; Goulart, C. B.; Souza, D. C.; Prandini, M. K.",
+            title: "FotoÁgua: efeitos de sistemas fotovoltaicos flutuantes sobre processos de transferência na interface ar-água e alterações para qualidade de água",
+            venue: "In: Inovação Colaborativa: Conectando Universidades e Empresas para o Futuro Sustentável. Curitiba: CRV, 2025. p. 419–460. DOI: 10.24824/978652517285.9.",
+            link: "https://drive.google.com/file/d/1t1YCCglWupKZq6RySZnXp7V3Nw0dSm3h/view",
+        },
+        {
+            authors: "Ferreira, D. M.; Coelho, M.; Fernandes, C. V. S.; Kaviski, E.; Detzel, D. H. M.",
+            title: "Deterministic and Stochastic Principles to Convert Discrete Water Quality Data into Continuous Time Series",
+            venue: "Water Resources Management, v.35, p.9 - , 2021.",
+            link: "https://link.springer.com/article/10.1007/s11269-021-02908-1",
+        },
+        {
+            authors: "Coelho, M.; Fernandes, C. V. S.; Detzel, D. H. M.",
+            title: "Uncertainty analysis in the detection of trends, cycles, and shifts in water resources time series",
+            venue: "Water Resources Management, v.27, p.1 - 16, 2019.",
+            link: "https://link.springer.com/article/10.1007/s11269-019-02210-1",
+        },
+        {
+            authors: "Coelho, M.; Fernandes, C. V. S.; Detzel, D. H. M.; Mannich, M.",
+            title: "Statistical validity of water quality time series in urban watersheds",
+            venue: "Brazilian Journal of Water Resources, v.22, e51, 2017.",
+            link: "https://www.scielo.br/j/rbrh/a/KyMFpKdRKYHvzh8pjQhvGCM/?lang=en",
+        },
+        {
+            authors: "Coelho, M.; Kishi, R. T.",
+            title: "Caracterização de Cargas Orgânicas nos Rios Barigui, Belém e Atuba na Bacia Hidrográfica do Alto Iguaçu",
+            venue: "XIX Simpósio Brasileiro de Recursos Hídricos, 2011.",
+            link: "https://files.abrhidro.org.br/Sumarios/81/3c9fafa856f87bb83b0cd075e962f6dc_4d50bce5e8ea3001ccb58893fe364e82.pdf",
         },
     ],
 }

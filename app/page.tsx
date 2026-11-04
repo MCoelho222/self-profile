@@ -4,6 +4,9 @@ import Experience from "./ui/Experience";
 import Certificates from "./ui/Certificates";
 import Image from "next/image";
 import Info from "./ui/SidebarInfo";
+import SkillsTable from "./ui/SkillsTable";
+import Languages from "./ui/Languages";
+import Publications from "./ui/Publications";
 
 export default function Home() {
   const { cvData } = require("./lib/cv-data.js");
@@ -22,8 +25,11 @@ export default function Home() {
       <div className="w-full pt-4 sm:pt-16 sm:w-3/5">
         <AboutMe title="About me" content={cvData.aboutMe} />
         <Education title="Education" content={cvData.education} />
+        <SkillsTable title="Skills" content={cvData.skills} />
         <Experience title="Experience" content={cvData.experience} />
-        <Certificates title="Certificates" content={cvData.certificates} />
+        <Certificates title="Certifications" content={cvData.certificates} />
+        <Languages title="Languages" content={cvData.languages} />
+        <Publications title="Publications" content={cvData.publications} />
       </div>
     </main>
   );

@@ -28,9 +28,10 @@ export interface ExperienceType {
 
 export interface IExperience {
     period: string;
-    company: string;
+    company?: string;
     title: string;
-    link: string;
+    link?: string;
+    summary?: string;
     description: string[];
     tech: string[];
 }
@@ -69,4 +70,39 @@ export interface ICertificates {
 export interface SkillsType {
     title?: string;
     content: string[];
+}
+
+// Skills table
+export interface ISkillLevel {
+    level: string;
+    items: string[];
+}
+
+export interface SkillsTableType {
+    title?: string;
+    content: ISkillLevel[];
+}
+
+// Languages
+export interface ILanguage {
+    language: string;
+    level: string;
+}
+
+export interface LanguagesType {
+    title?: string;
+    content: ILanguage[];
+}
+
+// Publications
+export interface IPublication {
+    authors: string;
+    title: string;
+    venue: string;
+    link: string;
+}
+
+export interface PublicationsType {
+    title?: string;
+    content: IPublication[];
 }
