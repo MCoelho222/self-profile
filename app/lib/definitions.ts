@@ -101,6 +101,7 @@ export interface IPublication {
     authors: string;
     title: string;
     venue: string;
+    year: string;
     link: string;
 }
 
