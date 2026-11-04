@@ -8,11 +8,11 @@ const Experience = ({ title, content }: ExperienceType) => {
             <p className="title">{title}</p>
             {content.map((item) => {
                 return (
-                    <div className="flex flex-row w-full mb-6" key={`${item.period}-${item.title}`}>
-                        <div className="w-1/6 description">
+                    <div className="flex flex-row w-full gap-4 mb-6" key={`${item.period}-${item.title}`}>
+                        <div className="period">
                             <p>{item.period}</p>
                         </div>
-                        <div className="w-5/6">
+                        <div className="flex-1 min-w-0">
                             <p className="subtitle">
                                 {item.title}
                                 {item.company && (
@@ -20,7 +20,7 @@ const Experience = ({ title, content }: ExperienceType) => {
                                         {" at "}
                                         {item.link ? (
                                             <a
-                                                className="blue-link"
+                                                className="accent-link"
                                                 href={item.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer">{item.company}

@@ -13,7 +13,10 @@ const cvData = {
     "Environmental Engineer and aspiring Environmental Data Scientist with a PhD focused on uncertainty \
 analysis in water quality time series. My research experience includes statistical analysis, variability \
 and trend detection, monitoring strategies, and the assessment of data representativeness in environmental \
-monitoring. I have extensive experience using Python for scientific programming and data analysis, \
+monitoring. I also know environmental data from its source: from my undergraduate studies through my postdoc, \
+I planned the monitoring campaigns, collected samples at every station, and performed the chemical analyses in the lab \
+myself, giving me first-hand insight into how sampling and measurement shape data quality and uncertainty. \
+I have extensive experience using Python for scientific programming and data analysis, \
 complemented by professional experience in software engineering, backend and frontend development, \
 automated testing, and AI model training and evaluation. My goal is to apply statistical methods and \
 Python-based data science to environmental challenges, developing reliable analytical approaches to support \

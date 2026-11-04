@@ -7,11 +7,11 @@ const Education = ({ title, content }: EducationType) => {
       <p className="title">{title}</p>
       {content.map((item) => {
         return (
-          <div className="flex flex-row w-full mb-4" key={item.title}>
-            <div className="description w-1/6">
+          <div className="flex flex-row w-full gap-4 mb-4" key={item.title}>
+            <div className="period">
               <p>{item.period}</p>
             </div>
-            <div className="w-5/6">
+            <div className="flex-1 min-w-0">
               <p className="subtitle mb-1">{item.title}</p>
               <p className="description">{item.description}</p>
             </div>

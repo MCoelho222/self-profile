@@ -9,7 +9,7 @@ const Publications = ({ title, content }: PublicationsType) => {
         <p className="description mb-4" key={item.title}>
           {item.authors}{" "}
           <a
-            className="blue-link"
+            className="accent-link"
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"

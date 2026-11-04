@@ -1,25 +1,53 @@
-import React from 'react';
-import { GrGithub } from "react-icons/gr";
+import React from "react";
+import { LuMail, LuGithub, LuLinkedin } from "react-icons/lu";
 import { InfoType } from "../lib/definitions";
-import { BsLinkedin } from "react-icons/bs";
 
-const Info = ({ title, content }: InfoType) => {
+const Info = ({ content }: InfoType) => {
   return (
-    <div>
-      <div className="flex flex-col items-center mb-6">
-        <p className="info-title">{content.name}</p>
-        {content.titles.map((item) => {
-          return <p className="info-subtitle" key={item}>{item}</p>;
-        })}
+    <div className="info-card">
+      <div className="flex flex-col items-center text-center">
+        <p className="info-title info-name">{content.name}</p>
+        {content.titles.map((item) => (
+          <p className="info-subtitle" key={item}>
+            {item}
+          </p>
+        ))}
       </div>
-      <p className="info-subtitle mb-8 text-center">{content.email}</p>
-      <div className="text-slate-400 text-2xl sm:text-3xl flex flex-row gap-3 justify-center mb-4">
-        <a href={content.github} target="_blank" rel="noopener noreferrer">
-          <GrGithub />
-        </a>
-        <a href={content.linkedin} target="_blank" rel="noopener noreferrer">
-          <BsLinkedin />
-        </a>
+
+      <div className="info-divider" />
+
+      <a className="info-contact" href={`mailto:${content.email}`}>
+        <span className="info-icon-chip">
+          <LuMail />
+        </span>
+        <span className="info-contact-text">{content.email}</span>
+      </a>
+
+      <div className="flex flex-row gap-3 justify-center mt-5">
+        {content.github && (
+          <a
+            className="info-social"
+            href={content.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <LuGithub />
+          </a>
+        )}
+        {content.linkedin && (
+          <a
+            className="info-social"
+            href={content.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <LuLinkedin />
+          </a>
+        )}
       </div>
     </div>
   );
