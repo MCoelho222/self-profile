@@ -7,7 +7,7 @@ const cvData = {
         name: 'Marcelo Coelho',
         job: 'Independent AI Training & Evaluation Specialist',
         company: 'Freelance',
-        titles: ['Environmental Data Scientist', 'Python', 'Statistical Analysis & Time Series'],
+        titles: ['Environmental Engineer, PhD & Fullstack Developer'],
     },
     aboutMe:
     "Environmental Engineer and aspiring Environmental Data Scientist with a PhD focused on uncertainty \
@@ -52,12 +52,7 @@ environmental monitoring, data interpretation, and evidence-based decision-makin
             link: "https://www.pucminas.br/",
             title: "Postgraduate Degree in Artificial Intelligence and Machine Learning",
             level: "Postgraduate",
-            description: "The course load was 360 hours, covering topics such as programming for data science, data visualization, \
-general statistics, modeling and data preparation for machine learning, integration and processing \
-for continuous data flow, machine learning, neural networks and deep learning, information retrieval \
-on the web and social networks, algorithms and genetic programming, image analysis and computer vision, \
-dataOps and MLOps culture and practices, recommendation systems, statistical models, special topics in machine \
-learning, natural language processing, humanities."
+            description: "PUC Minas (360 h). Machine learning, deep learning, NLP, computer vision, statistical modeling, and MLOps."
         },
         {
             period: "2021 - 2023",
@@ -66,9 +61,7 @@ learning, natural language processing, humanities."
             link: "https://ufpr.br/",
             title: "Postdoctoral Research in water quality monitoring using floating photovoltaic systems in reservoirs",
             level: "Postdoctoral",
-            description: "Monitoring and analysis of water quality data under floating solar power plants installed \
-in reservoirs caused by river dams. The analysis were performed using Python, Pandas, Numpy, Matplotlib, Seaborn, \
-and statistical methods to identify trends, seasonal patterns, and anomalies in the data."
+            description: "UFPR. Statistical analysis of water quality data under floating solar plants using Python to detect trends, seasonality, and anomalies."
         },
         {
             period: "2015 - 2019",
@@ -77,10 +70,7 @@ and statistical methods to identify trends, seasonal patterns, and anomalies in 
             link: "https://ufpr.br/",
             title: "PhD in uncertainty analysis in the use of water quality time series",
             level: "Doctorate degree",
-            description: "A research about uncertainty analysis in the statistical and stochastic context of water quality time series. The goal was to \
-develop and apply methods to quantify and reduce uncertainties in water quality data, improving the reliability of data-driven \
-decisions in water resource management. The research was performed using Python, Pandas, Numpy, Scipy, Matplotlib, and statistical \
-techniques such as Monte Carlo simulations, Bayesian inference, and time series analysis.",
+            description: "UFPR. Methods to quantify and reduce uncertainty in water quality time series, using Python and Monte Carlo simulation.",
         },
         {
             period: "2011 - 2013",
@@ -89,8 +79,7 @@ techniques such as Monte Carlo simulations, Bayesian inference, and time series 
             link: "https://ufpr.br/",
             title: "Master's Degree in water quality monitoring strategies for water resources management in urban watersheds",
             level: "Master's degree",
-            description: "A research about water quality monitoring strategy for the management of water resources in urban basins. \
-The research focused on developing and applying methods for effective monitoring and assessment of water quality in urban environments. The tools used includes QGIS and Excel."
+            description: "UFPR. Design and assessment of water quality monitoring strategies for urban basins, using QGIS and Excel."
         },
         {
             period: "2004 - 2010",
@@ -99,7 +88,7 @@ The research focused on developing and applying methods for effective monitoring
             link: "https://ufpr.br/",
             title: "Bachelor's Degree in Environmental Engineering",
             level: "Graduate",
-            description: "Environmental sciences, engineering principles, and sustainable practices."
+            description: "UFPR. Environmental sciences, engineering principles, and sustainable practices."
         },
     ],
     experience: [
