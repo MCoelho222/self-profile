@@ -132,4 +132,6 @@ export interface ILabels {
     proficiency: string;
     outOf: string;
     switchLanguage: string;
+    themeToLight: string;
+    themeToDark: string;
 }

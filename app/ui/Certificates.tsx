@@ -1,4 +1,5 @@
 import React from "react";
+import EntryDate from "./EntryDate";
 import { LuArrowUpRight } from "react-icons/lu";
 import { CertificatesType } from "../lib/definitions";
 
@@ -9,12 +10,12 @@ const Certificates = ({ title, content, viewLabel = "View certificate" }: Certif
       <div className="exp-timeline">
         {content.map((item) => (
           <article className="exp-item cert-item" key={item.title}>
-            <header className="flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
-              <h3 className="cert-title">{item.title}</h3>
-              <span className="exp-period">{item.year}</span>
-            </header>
+            <div className="entry-row entry-row-year">
+              <EntryDate value={item.year} />
+              <div className="min-w-0">
+                <h3 className="cert-title">{item.title}</h3>
 
-            <p className="cert-meta">
+                <p className="cert-meta">
               <span>{item.institution}</span>
               {item.load && (
                 <>
@@ -32,7 +33,9 @@ const Certificates = ({ title, content, viewLabel = "View certificate" }: Certif
                 {viewLabel}
                 <LuArrowUpRight aria-hidden="true" />
               </a>
-            </p>
+                </p>
+              </div>
+            </div>
           </article>
         ))}
       </div>

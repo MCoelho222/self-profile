@@ -19,6 +19,8 @@ const cvData = {
         proficiency: "proficiency",
         outOf: "out of",
         switchLanguage: "Language",
+        themeToLight: "Switch to light mode",
+        themeToDark: "Switch to dark mode",
     },
     info: {
         email: 'mcoelho2011@hotmail.com',
@@ -30,17 +32,13 @@ const cvData = {
         titles: ['Environmental Engineer, PhD & Fullstack Developer'],
     },
     aboutMe:
-    "Environmental Engineer and aspiring Environmental Data Scientist with a PhD focused on uncertainty \
-analysis in water quality time series. My research experience includes statistical analysis, variability \
-and trend detection, monitoring strategies, and the assessment of data representativeness in environmental \
-monitoring. I also know environmental data from its source: from my undergraduate studies through my postdoc, \
-I planned the monitoring campaigns, collected samples at every station, and performed the chemical analyses in the lab \
-myself, giving me first-hand insight into how sampling and measurement shape data quality and uncertainty. \
-I have extensive experience using Python for scientific programming and data analysis, \
-complemented by professional experience in software engineering, backend and frontend development, \
-automated testing, and AI model training and evaluation. My goal is to apply statistical methods and \
-Python-based data science to environmental challenges, developing reliable analytical approaches to support \
-environmental monitoring, data interpretation, and evidence-based decision-making.",
+    "Environmental Engineer with a PhD on uncertainty analysis in water quality \
+time series. My research covers statistical analysis, trend and variability detection, monitoring design, and data \
+representativeness. I also know environmental data from its source: from undergrad through postdoc, I planned the \
+monitoring campaigns, collected the samples in the field, and ran the chemical analyses in the lab myself. I combine \
+this with extensive Python experience and a professional background in software engineering and AI model training \
+and evaluation. My goal is to apply statistics and data science to environmental challenges, supporting reliable \
+monitoring and evidence-based decisions.",
     skills: [
         {
             level: "Advanced",

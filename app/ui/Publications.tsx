@@ -1,4 +1,5 @@
 import React from "react";
+import EntryDate from "./EntryDate";
 import { PublicationsType } from "../lib/definitions";
 
 const SELF = "Coelho, M.";
@@ -25,18 +26,20 @@ const Publications = ({ title, content }: PublicationsType) => {
       <div className="exp-timeline">
         {content.map((item) => (
           <article className="exp-item pub-item" key={item.title}>
-            <header className="flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
-              <h3 className="pub-title">
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  {item.title}
-                </a>
-              </h3>
-              <span className="exp-period">{item.year}</span>
-            </header>
-            <p className="pub-authors">
-              <Authors authors={item.authors} />
-            </p>
-            <p className="pub-venue">{item.venue}</p>
+            <div className="entry-row entry-row-year">
+              <EntryDate value={item.year} />
+              <div className="min-w-0">
+                <h3 className="pub-title">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                  </a>
+                </h3>
+                <p className="pub-authors">
+                  <Authors authors={item.authors} />
+                </p>
+                <p className="pub-venue">{item.venue}</p>
+              </div>
+            </div>
           </article>
         ))}
       </div>

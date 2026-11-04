@@ -377,16 +377,6 @@
   box-shadow: 0 0 10px rgba(238, 200, 149, 0.35);
 }
 
-.exp-period {
-  @apply shrink-0 font-mono text-xs sm:text-sm text-slate-300/90 whitespace-nowrap;
-  font-variant-numeric: tabular-nums;
-  padding: 0.2rem 0.6rem;
-  margin-top: 0.15rem;
-  border-radius: 9999px;
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.18);
-}
-
 .exp-company {
   @apply text-base text-slate-400 font-medium mt-1;
 }
@@ -403,15 +393,16 @@
   @apply relative pl-5 text-slate-400 text-base sm:text-[17px] leading-relaxed;
 }
 
+/* Round bullet dots, vertically centred on the first line (line-height 1.625) */
 .exp-bullets li::before {
   content: "";
   position: absolute;
-  left: 0.2rem;
-  top: 0.7em;
-  width: 6px;
-  height: 1.5px;
-  border-radius: 1px;
-  background: rgba(148, 163, 184, 0.6);
+  left: 0.3rem;
+  top: calc(0.8125em - 2.5px);
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: rgb(203, 213, 225);
 }
 
 /* Tech stack chips */
@@ -516,7 +507,7 @@
 }
 
 .pub-title {
-  @apply flex-1 min-w-0 text-base sm:text-lg font-medium leading-snug text-slate-300/90;
+  @apply text-base sm:text-lg font-medium leading-6 sm:leading-7 text-slate-300/90;
 }
 
 .pub-title a {
@@ -542,10 +533,6 @@
 
 /* ---------- Language switch (EN | PT) ---------- */
 .lang-switch {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 50;
   display: flex;
   gap: 2px;
   padding: 3px;
@@ -575,4 +562,283 @@
 
 .lang-switch-active:hover {
   color: #1e1b16;
+}
+
+/* ---------- Top-right controls (theme + language) ---------- */
+.top-controls {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  color: rgb(238, 200, 149);
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  border-color: rgba(238, 200, 149, 0.45);
+  transform: rotate(-15deg);
+}
+
+.theme-toggle:disabled {
+  cursor: default;
+}
+
+/* Sun in dark mode (switch to light), moon in light mode */
+.theme-icon-moon { display: none; }
+html[data-theme="light"] .theme-icon-sun { display: none; }
+html[data-theme="light"] .theme-icon-moon { display: block; }
+
+.exp-abbr {
+  @apply text-slate-500;
+}
+
+/* Smooth colour change when toggling */
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* =====================================================================
+   Light theme — overrides only; the dark theme above is the default.
+   Palette: near-white background, slate text, blue for link hover, icons
+   and décor, and black bullet dots.
+   ===================================================================== */
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="light"] { color-scheme: light; }
+
+html[data-theme="light"] body {
+  background-color: #fcfcfb;
+}
+
+/* Text */
+html[data-theme="light"] .title { @apply text-slate-800; }
+html[data-theme="light"] .subtitle { @apply text-slate-700; }
+html[data-theme="light"] .description,
+html[data-theme="light"] .description-justify,
+html[data-theme="light"] .exp-description,
+html[data-theme="light"] .exp-bullets li,
+html[data-theme="light"] .info-subtitle { @apply text-slate-600; }
+html[data-theme="light"] .exp-company,
+html[data-theme="light"] .pub-venue { @apply text-slate-600; }
+html[data-theme="light"] .exp-summary,
+html[data-theme="light"] .exp-abbr,
+html[data-theme="light"] .cert-meta,
+html[data-theme="light"] .pub-authors,
+html[data-theme="light"] .lang-level { @apply text-slate-500; }
+html[data-theme="light"] .cert-sep { @apply text-slate-400; }
+html[data-theme="light"] .skills { @apply text-slate-700; }
+html[data-theme="light"] .cert-title,
+html[data-theme="light"] .pub-title,
+html[data-theme="light"] .lang-name,
+html[data-theme="light"] .pub-self { @apply text-slate-700; }
+
+/* Accent (bronze) */
+/* Links: neutral with a faint underline; blue only on hover */
+html[data-theme="light"] .accent-link {
+  @apply text-slate-700;
+  text-decoration-color: rgba(100, 116, 139, 0.35);
+}
+html[data-theme="light"] .accent-link:hover {
+  color: #1d4ed8;
+  text-decoration-color: rgba(37, 99, 235, 0.8);
+}
+html[data-theme="light"] .pub-title a:hover { color: #2563eb; }
+
+html[data-theme="light"] .info-name {
+  background-image: linear-gradient(90deg, #1e293b 0%, #2563eb 100%);
+}
+
+/* Background décor */
+html[data-theme="light"] .live-bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+}
+html[data-theme="light"] .live-bg-orb-main {
+  background: radial-gradient(
+    circle at center,
+    rgba(147, 197, 253, 0.32) 0%,
+    rgba(147, 197, 253, 0.12) 35%,
+    rgba(252, 252, 251, 0) 70%
+  );
+}
+html[data-theme="light"] .live-bg-orb-accent {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(252, 252, 251, 0) 70%);
+}
+
+/* Photo */
+html[data-theme="light"] .avatar {
+  background: conic-gradient(
+    from var(--avatar-angle),
+    rgba(96, 165, 250, 0.9),
+    rgba(148, 163, 184, 0.3),
+    rgba(252, 252, 251, 0.2),
+    rgba(191, 219, 254, 0.8),
+    rgba(96, 165, 250, 0.9)
+  );
+}
+html[data-theme="light"] .avatar-img { border-color: #fcfcfb; }
+html[data-theme="light"] .avatar::before {
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.45), transparent 70%);
+}
+
+/* Sidebar */
+html[data-theme="light"] .info-divider {
+  background: linear-gradient(90deg, transparent, rgba(100, 116, 139, 0.3), transparent);
+}
+html[data-theme="light"] .info-contact-text { @apply text-slate-700; }
+html[data-theme="light"] .info-contact:hover { background-color: rgba(147, 197, 253, 0.18); }
+html[data-theme="light"] .info-contact:hover .info-contact-text { color: #1d4ed8; }
+html[data-theme="light"] .info-icon-chip {
+  color: #2563eb;
+  background: rgba(147, 197, 253, 0.25);
+  border-color: rgba(37, 99, 235, 0.25);
+}
+html[data-theme="light"] .info-social {
+  @apply text-slate-700;
+  background: #ffffff;
+  border-color: rgba(100, 116, 139, 0.25);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.06),
+    0 6px 14px -8px rgba(15, 23, 42, 0.18);
+}
+html[data-theme="light"] .info-social:hover {
+  color: #2563eb;
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 0 18px -4px rgba(147, 197, 253, 0.8);
+}
+
+/* Timeline */
+html[data-theme="light"] .exp-timeline::before {
+  background: linear-gradient(to bottom, rgba(96, 165, 250, 0.6), rgba(100, 116, 139, 0.2) 70%, transparent);
+}
+html[data-theme="light"] .exp-item::before {
+  background: #fcfcfb;
+  border-color: rgba(96, 165, 250, 0.9);
+  box-shadow: 0 0 8px rgba(147, 197, 253, 0.7);
+}
+html[data-theme="light"] .exp-bullets li::before { background: #0f172a; }
+
+/* Badges, chips, cards */
+/* Tech chips: crisp white keys with a little depth */
+html[data-theme="light"] .tech-chip {
+  @apply text-slate-700;
+  background: #ffffff;
+  border-color: rgba(100, 116, 139, 0.25);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.06),
+    0 3px 8px -5px rgba(15, 23, 42, 0.15);
+}
+html[data-theme="light"] .lang-card {
+  background: #ffffff;
+  border-color: rgba(100, 116, 139, 0.2);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05),
+    0 10px 24px -14px rgba(15, 23, 42, 0.2);
+}
+html[data-theme="light"] .lang-card:hover { border-color: rgba(37, 99, 235, 0.35); }
+html[data-theme="light"] .lang-code {
+  color: #2563eb;
+  background: rgba(147, 197, 253, 0.25);
+  border-color: rgba(37, 99, 235, 0.25);
+}
+html[data-theme="light"] .lang-seg { background: rgba(100, 116, 139, 0.18); }
+html[data-theme="light"] .lang-seg-on {
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.9), rgba(147, 197, 253, 0.9));
+}
+
+/* Top-right controls */
+html[data-theme="light"] .lang-switch,
+html[data-theme="light"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(100, 116, 139, 0.2);
+}
+html[data-theme="light"] .theme-toggle { color: #2563eb; }
+html[data-theme="light"] .theme-toggle:hover { border-color: rgba(37, 99, 235, 0.45); }
+html[data-theme="light"] .lang-switch-opt { @apply text-slate-500; }
+html[data-theme="light"] .lang-switch-opt:hover { @apply text-slate-800; }
+html[data-theme="light"] .lang-switch-active,
+html[data-theme="light"] .lang-switch-active:hover {
+  color: #0f2747;
+  background: #bfdbfe;
+  box-shadow: 0 0 12px -3px rgba(96, 165, 250, 0.6);
+}
+
+/* Skills table level label: small heading on phones, column label on sm+ */
+@media (max-width: 639px) {
+  .skill-level {
+    @apply text-sm font-medium uppercase tracking-wide;
+  }
+}
+
+/* Link that reads as plain secondary text until hovered (Education institutions) */
+.muted-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.muted-link:hover {
+  color: #eec895;
+  text-decoration-color: rgba(238, 200, 149, 0.5);
+}
+
+html[data-theme="light"] .muted-link:hover {
+  color: #2563eb;
+  text-decoration-color: rgba(96, 165, 250, 0.6);
+}
+
+/* Timeline entries: one-line date column beside the node, content aligned after it.
+   Width fits the longest range ("2024–Present"). */
+.entry-row {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  column-gap: 0.75rem;
+  align-items: start;
+}
+
+.entry-date {
+  @apply font-mono text-xs sm:text-sm text-slate-500 whitespace-nowrap;
+  font-variant-numeric: tabular-nums;
+  /* Matches the title's first line (24px / 28px) */
+  line-height: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .entry-row {
+    grid-template-columns: 6.75rem minmax(0, 1fr);
+  }
+  .entry-date {
+    line-height: 1.75rem;
+  }
+}
+
+html[data-theme="light"] .entry-date { @apply text-slate-500; }
+
+/* Single-year entries (Certifications, Publications): narrow date column */
+.entry-row-year {
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+}
+
+@media (min-width: 640px) {
+  .entry-row-year {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+  }
 }
