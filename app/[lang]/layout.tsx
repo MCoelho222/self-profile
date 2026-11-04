@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { DM_Sans, JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 import LiveBackground from "../ui/LiveBackground";
+import { themeInitScript } from "../ui/ThemeToggle";
 import { getCv, isLocale, locales } from "../lib/i18n";
 
 const sans = DM_Sans({
@@ -46,7 +47,16 @@ export default function RootLayout({
   if (!isLocale(params.lang)) notFound();
 
   return (
-    <html lang={params.lang === "pt" ? "pt-BR" : "en"} className={`${sans.variable} ${mono.variable}`}>
+    <html
+      lang={params.lang === "pt" ? "pt-BR" : "en"}
+      data-theme="dark"
+      className={`${sans.variable} ${mono.variable}`}
+      // The inline script may switch data-theme before React hydrates
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="bg-gray-900 font-sans antialiased">
         <LiveBackground />
         {children}

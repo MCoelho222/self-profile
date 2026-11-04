@@ -20,6 +20,8 @@ const cvData = {
         proficiency: "proficiência",
         outOf: "de",
         switchLanguage: "Idioma",
+        themeToLight: "Mudar para o modo claro",
+        themeToDark: "Mudar para o modo escuro",
     },
     info: {
         email: 'mcoelho2011@hotmail.com',
@@ -31,17 +33,13 @@ const cvData = {
         titles: ['Engenheiro Ambiental, PhD & Desenvolvedor Fullstack'],
     },
     aboutMe:
-    "Engenheiro Ambiental e aspirante a Cientista de Dados Ambientais, com doutorado focado em análise de incertezas \
-em séries temporais de qualidade da água. Minha experiência em pesquisa inclui análise estatística, detecção de \
-variabilidade e tendências, estratégias de monitoramento e avaliação da representatividade de dados no monitoramento \
-ambiental. Também conheço os dados ambientais desde a origem: da graduação ao pós-doutorado, planejei as campanhas de \
-monitoramento, coletei amostras em todas as estações e realizei pessoalmente as análises químicas em laboratório, o que \
-me dá uma compreensão prática de como a amostragem e a medição influenciam a qualidade e a incerteza dos dados. \
-Tenho ampla experiência com Python para programação científica e análise de dados, complementada por experiência \
-profissional em engenharia de software, desenvolvimento backend e frontend, testes automatizados e treinamento e \
-avaliação de modelos de IA. Meu objetivo é aplicar métodos estatísticos e ciência de dados com Python a desafios \
-ambientais, desenvolvendo abordagens analíticas confiáveis para apoiar o monitoramento ambiental, a interpretação \
-de dados e a tomada de decisão baseada em evidências.",
+    "Engenheiro Ambiental com doutorado em análise de incertezas em séries \
+temporais de qualidade da água. Minha pesquisa abrange análise estatística, detecção de tendências e variabilidade, \
+planejamento de monitoramento e representatividade de dados. Também conheço os dados ambientais desde a origem: da \
+graduação ao pós-doutorado, planejei as campanhas de monitoramento, coletei as amostras em campo e realizei pessoalmente \
+as análises químicas em laboratório. Somo a isso ampla experiência com Python e atuação profissional em engenharia de \
+software e no treinamento e avaliação de modelos de IA. Meu objetivo é aplicar estatística e ciência de dados a \
+desafios ambientais, apoiando um monitoramento confiável e decisões baseadas em evidências.",
     skills: [
         {
             level: "Avançado",

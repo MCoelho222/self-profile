@@ -1,22 +1,21 @@
 import React from "react";
 import { SkillsTableType } from "../lib/definitions";
 
+// Phones: level label stacked above its skills.
+// sm+: two columns with a fixed-width label column, so long labels
+// ("Intermediate", "Machine Learning") never collide with the list.
 const SkillsTable = ({ title, content }: SkillsTableType) => {
   return (
     <div className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
-      {content.map((item) => {
-        return (
-          <div className="flex flex-row w-full mb-2" key={item.level}>
-            <div className="description w-1/4 sm:w-1/6">
-              <p>{item.level}</p>
-            </div>
-            <div className="w-3/4 sm:w-5/6">
-              <p className="skills">{item.items.join(", ")}</p>
-            </div>
-          </div>
-        );
-      })}
+      <dl className="grid grid-cols-1 sm:grid-cols-[11rem_1fr] gap-x-6 gap-y-1 sm:gap-y-2">
+        {content.map((item) => (
+          <React.Fragment key={item.level}>
+            <dt className="description skill-level">{item.level}</dt>
+            <dd className="skills mb-3 sm:mb-0">{item.items.join(", ")}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import SkillsTable from "../ui/SkillsTable";
 import Languages from "../ui/Languages";
 import Publications from "../ui/Publications";
 import LanguageSwitch from "../ui/LanguageSwitch";
+import ThemeToggle from "../ui/ThemeToggle";
 import { getCv, isLocale } from "../lib/i18n";
 import { ILabels } from "../lib/definitions";
 
@@ -20,7 +21,10 @@ export default function Home({ params }: { params: { lang: string } }) {
 
   return (
     <main className="flex flex-col justify-center min-h-screen p-5 sm:flex-row">
-      <LanguageSwitch current={params.lang} label={labels.switchLanguage} />
+      <div className="top-controls">
+        <ThemeToggle toLightLabel={labels.themeToLight} toDarkLabel={labels.themeToDark} />
+        <LanguageSwitch current={params.lang} label={labels.switchLanguage} />
+      </div>
       <div className="w-full h-full flex flex-col items-center sm:w-1/5 sm:fixed sm:top-7 sm:left-1 sm:pt-9 sm:px-7">
         <div className="avatar mb-2">
           <Image
@@ -34,7 +38,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </div>
         <Info content={cvData.info} />
       </div>
-      <div className="w-full pt-4 sm:pt-16 sm:w-[55%] sm:ml-20 lg:ml-32">
+      <div className="w-full pt-4 sm:pt-16 sm:w-[55%] sm:ml-16 lg:ml-24">
         <AboutMe title={t.aboutMe} content={cvData.aboutMe} />
         <Education title={t.education} content={cvData.education} />
         <SkillsTable title={t.skills} content={cvData.skills} />
