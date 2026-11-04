@@ -13,39 +13,39 @@
 
 /* Description */
 .description {
-  @apply text-slate-500 font-mono;
+  @apply text-slate-400 text-[17px] leading-relaxed;
 }
 
 .description-justify {
-  @apply text-slate-500 text-justify font-mono;
+  @apply text-slate-400 text-[17px] leading-relaxed text-justify;
 }
 
 /* Titles */
 .title {
-  @apply text-4xl text-slate-400 mb-6;
+  @apply text-4xl font-semibold tracking-tight text-slate-200 mb-6;
 }
 
 .subtitle {
-  @apply text-slate-400 text-xl;
+  @apply text-xl font-medium text-slate-300;
 }
 
 .info-title {
-  @apply text-slate-300 text-lg mt-2 mb-3;
+  @apply text-2xl font-semibold tracking-tight text-slate-200 mt-2 mb-3;
 }
 
 .info-subtitle {
-  @apply text-slate-500 font-mono;
+  @apply text-base text-slate-400 text-center [overflow-wrap:anywhere];
 }
 
 /* Skills */
 .skills {
-  @apply text-green-700 font-mono;
+  @apply text-emerald-500 font-mono text-[15px];
 }
 
 /* Small screen sizes */
 @media (max-width: 639px) {
   .title {
-    @apply text-xl mb-4;
+    @apply text-2xl mb-4;
   }
 
   .subtitle {
@@ -54,15 +54,15 @@
 
 
   .info-subtitle {
-    @apply text-sm;
+    @apply text-[15px];
   }
 
   .description {
-    @apply text-sm;
+    @apply text-base;
   }
 
   .description-justify {
-    @apply text-sm;
+    @apply text-base;
   }
 
   .skills {
@@ -89,4 +89,85 @@
   background: linear-gradient(to right, rgb(172, 173, 180), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Live background ---------- */
+.live-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Faint grid, visible only near the top-right glow */
+.live-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(52, 211, 153, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(52, 211, 153, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(circle at 100% 0%, black 0%, transparent 55%);
+  mask-image: radial-gradient(circle at 100% 0%, black 0%, transparent 55%);
+  animation: live-bg-grid-pan 30s linear infinite;
+}
+
+.live-bg-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(40px);
+  will-change: transform, opacity;
+}
+
+/* Main sphere: emerald core fading into the page's gray-900 */
+.live-bg-orb-main {
+  width: 70vmax;
+  height: 70vmax;
+  top: -35vmax;
+  right: -30vmax;
+  background: radial-gradient(
+    circle at center,
+    rgba(4, 120, 87, 0.32) 0%,
+    rgba(17, 94, 89, 0.16) 35%,
+    rgba(17, 24, 39, 0) 70%
+  );
+  animation: live-bg-breathe 14s ease-in-out infinite;
+}
+
+/* Smaller teal/cyan accent for depth */
+.live-bg-orb-accent {
+  width: 35vmax;
+  height: 35vmax;
+  top: 5vmax;
+  right: 12vmax;
+  background: radial-gradient(
+    circle at center,
+    rgba(14, 116, 144, 0.12) 0%,
+    rgba(17, 24, 39, 0) 70%
+  );
+  animation: live-bg-drift 22s ease-in-out infinite;
+}
+
+@keyframes live-bg-breathe {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.85; }
+  50%      { transform: translate(-3vmax, 2vmax) scale(1.08); opacity: 1; }
+}
+
+@keyframes live-bg-drift {
+  0%, 100% { transform: translate(0, 0); opacity: 0.6; }
+  33%      { transform: translate(-6vmax, 4vmax); opacity: 1; }
+  66%      { transform: translate(3vmax, 7vmax); opacity: 0.75; }
+}
+
+@keyframes live-bg-grid-pan {
+  from { background-position: 0 0; }
+  to   { background-position: 48px 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-bg-grid,
+  .live-bg-orb {
+    animation: none;
+  }
 }
