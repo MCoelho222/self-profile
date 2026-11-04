@@ -1,11 +1,11 @@
 import { SkillsType } from "../lib/definitions";
 
 // Tech stack rendered as small tag chips
-const Skills = ({ title, content }: SkillsType) => {
+const Skills = ({ title, content, label = "Technologies" }: SkillsType) => {
   return (
     <div>
       {title && <p className="title">{title}</p>}
-      <ul className="flex flex-wrap gap-2 mt-4" aria-label="Technologies">
+      <ul className="flex flex-wrap gap-2 mt-4" aria-label={label}>
         {content.map((tech) => (
           <li className="tech-chip" key={tech}>
             {tech}

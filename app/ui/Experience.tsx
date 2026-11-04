@@ -2,7 +2,7 @@ import React from "react";
 import { ExperienceType } from "../lib/definitions";
 import Skills from "./Skills";
 
-const Experience = ({ title, content }: ExperienceType) => {
+const Experience = ({ title, content, techLabel }: ExperienceType) => {
   return (
     <section className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
@@ -36,7 +36,7 @@ const Experience = ({ title, content }: ExperienceType) => {
               </ul>
             )}
 
-            {item.tech.length > 0 && <Skills content={item.tech} />}
+            {item.tech.length > 0 && <Skills content={item.tech} label={techLabel} />}
           </article>
         ))}
       </div>

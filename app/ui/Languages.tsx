@@ -3,7 +3,12 @@ import { LanguagesType } from "../lib/definitions";
 
 const SEGMENTS = 5;
 
-const Languages = ({ title, content }: LanguagesType) => {
+const Languages = ({
+  title,
+  content,
+  proficiencyLabel = "proficiency",
+  outOfLabel = "out of",
+}: LanguagesType) => {
   return (
     <section className="mb-10 sm:mb-16">
       <p className="title">{title}</p>
@@ -20,7 +25,7 @@ const Languages = ({ title, content }: LanguagesType) => {
             <div
               className="lang-meter"
               role="img"
-              aria-label={`${item.language} proficiency: ${item.proficiency} out of ${SEGMENTS}`}
+              aria-label={`${item.language} ${proficiencyLabel}: ${item.proficiency} ${outOfLabel} ${SEGMENTS}`}
             >
               {Array.from({ length: SEGMENTS }, (_, i) => (
                 <span key={i} className={i < item.proficiency ? "lang-seg lang-seg-on" : "lang-seg"} />
